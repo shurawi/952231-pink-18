@@ -5,8 +5,139 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <a class="page-header__link" href="#"><img class="page-header__img" src="#" width="" height="" alt="Логотип ПИНК"></a>
+      <button class="page-header__button" type="button">Открыть меню</button>
+      <nav class="header-nav">
+        <div class="header-nav__wrap">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link--active">Главная</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">Фотографии</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">Конкурс</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="index-pg">
+      <h1 class="index-pg__title visually-hidden">Презентация мобильного приложения Пинк</h1>
+      <section class="promo">
+        <div class="promo__wrap">
+          <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
+        </div>
+      </section>
+      <section class="app">
+        <div class="app__wrap">
+          <button class="app__button" type="button">Скачать приложение</button>
+          <div class="app__item">
+            <img src="#" width="" height="" alt="Логотип Апл">
+          </div>
+          <div class="app__item">
+            <img src="#" width="" height="" alt="Логотип Андройд">
+          </div>
+          <div class="app__item">
+            <img src="#" width="" height="" alt="Логотип Майкрософт">
+          </div>
+          <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+      <section class="greeting">
+        <div class="greeting__wrap">
+          <h2 class="greeting__title">Устали от серости мегаполиса?</h2>
+          <h2 class="greeting__title">Нам есть, что вам предложить!</h2>
+        </div>
+      </section>
+      <section class="advantage">
+        <div class="advantage__wrap">
+          <h2 class="advantage__title visually-hidden">Преимущества мобильного приложения "Пинк"</h2>
+          <div class="advantage__item">
+            <h3 class="advantage__title">Поднимает настроение</h3>
+            <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</div>
+          </div>
+          <div class="advantage__item">
+            <h3 class="advantage__title">Меняет мир вокруг</h3>
+            <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</div>
+          </div>
+          <div class="advantage__item">
+            <h3 class="advantage__title">Заводит новых друзей</h3>
+            <p class="advantage__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</div>
+          </div>
+          <div class="advantage__pic">
+            <img src="#" width="" height="" alt="Розовое изображение мусорных баков, через мобильное приложение Пинк">
+          </div>
+        </div>
+      </section>
+      <section class="comment">
+        <div class="comment__title visually-hidden">Отзывы наших пользователей</h2>
+        <div class="comment__wrap">
+          <div class="comment__item">
+            <h3 class="comment__title">Николай Петров</h3>
+            <p class="comment__text">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</p>
+          </div>
+          <input class="comment__radio" type="radio" name="comment" id="bt1" checked>
+          <input class="comment__radio" type="radio" name="comment" id="bt2">
+          <input class="comment__radio" type="radio" name="comment" id="bt3">
+          <label class="comment__label" for="id1"></label>
+          <label class="comment__label" for="id2"></label>
+          <label class="comment__label" for="id3"></label>
+        </div>
+      </section>
+      <section class="tariff">
+        <h2 class="tariff__title visually-hidden">Наши тарифы</h2>
+        <div class="tariff__wrap">
+          <div class="tariff__inner">
+            <div class="tariff__name">
+              <h3 class="tariff__title">Стандарт</h3>
+              <span class="tariff__span">3,99 USD</span>
+            </div>
+            <div class="tariff__catalog">
+              <ul class="tariff__list">
+                <li class="tariff__item tariff__item--enable">Розовый фильтр</li>
+                <li class="tariff__item tariff__item--enable">Смайлики</li>
+                <li class="tariff__item tariff__item--disable">Комментарии</li>
+              </ul>
+            </div>
+          </div>
+          <input class="tariff__radio" type="radio" name="tariff" id="bt1">
+          <input class="tariff__radio" type="radio" name="tariff" id="bt2" checked>
+          <input class="tariff__radio" type="radio" name="tariff" id="bt3">
+          <label class="tariff__label" for="id1"></label>
+          <label class="tariff__label" for="id2"></label>
+          <label class="tariff__label" for="id3"></label>
+        </div>
+      </section>
+      <section class="feedback">
+        <h2 class="feedback__title visually-hidden">Схема проезда до нашего офиса и контактная информация</h2>
+        <div class="feedback__wrap">
+          <div class="feedback__map">
+            <img class="feedback__pic" src="#" width="" height="" alt="схема проезда до нашего офиса - ул. Большая Конюшенная, 19/8">
+          </div>
+          <div class="feedback__directory">
+            <h2 class="feedback__headline">Остались вопросы?</h2>
+            <h2 class="feedback__headline">Свяжитесь с нами!</h2>
+            <div class="feedback__item">
+              <h3 class="feedback__title">Звоните:</h3>
+              <p class="feedback__text">+7 (812) 555-66-66</p>
+            </div>
+            <div class="feedback__item">
+              <h3 class="feedback__title">Пишите:</h3>
+              <p class="feedback__text">mail@htmlacademy.ru</p>
+            </div>
+            <div class="feedback__item">
+              <h3 class="feedback__title">Приезжайте в гости:</h3>
+              <p class="feedback__text">ул. Большая Конюшенная, 19/8</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    <main>
   </body>
 </html>
