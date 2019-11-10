@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__link" href="index.html"><img class="page-header__img" src="#" width="" height="" alt="Логотип ПИНК"></a>
+      <button class="page-header__button" type="button">Открыть меню</button>
+      <nav class="header-nav">
+        <div class="header-nav__wrap">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link--active">Конкурс</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="form-pg">
+      <section class="promo promo--form-pg">
+        <h2 class="promo__title">Конкурс на самое безбашенное путешествие с Пинк<h2>
+      </section>
+      <section class="lottery">
+        <div class="lottery__wrap">
+          <div class="lottery__text">
+            <p class="lottery__pharagraf">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните</p>
+          </div>
+          <form class="lottery__form form" method="post" action="https://echo.htmlacademy.ru">
+            <fieldset class="from__list from__list--name">
+              <div class="form__item form__item--name">
+                <label class="form__label" for="sename">Фамилия:</label>
+                <input class="form__input" type="text" name="name" id="sename" placeholder="Укажите фамилию *" required>
+              </div>
+              <div class="form__item form__item--name">
+                <label class="form__label" for="name">Имя:</label>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
+              </div>
+              <div class="form__item form__item--name">
+                <label class="form__label" for="patronymic">Отчество:</label>
+                <input class="form__input" type="text" name="name" id="patronymic" placeholder="Ну и отчество тоже">
+              </div>
+            </fieldset>
+            <fieldset class="form__list form__list--check">
+              <legend class="form__title form__title--check">Ваши безбашенные достижения в путешествии</legend>
+              <div class="form__item form__item--check">
+                <input class="form__input form__input--check" type="checkbox" name="check" id="shark" value="shark" checked>
+                <label class="form__label form__label--check" for="shark">Сделал селфи с акулой</label>
+              </div>
+              <div class="form__item form__item--check">
+                <input class="form__input form__input--check" type="checkbox" name="check" id="beach" value="beach" checked>
+                <label class="form__label form__label--check" for="beach">Обгорел на пляже</label>
+              </div>
+              <div class="form__item form__item--check">
+                <input class="form__input form__input--check" type="checkbox" name="check" id="ChuckNorris" value="ChuckNorris">
+                <label class="form__label form__label--check" for="ChuckNorris">Видел Чака Норриса</label>
+              </div>
+              <div class="form__item form__item--check">
+                <input class="form__input form__input--check" type="checkbox" name="check" id="souvenirs" value="souvenirs">
+                <label class="form__label form__label--check" for="souvenirs">Накупил сувениров</label>
+              </div>
+              <div class="form__item form__item--check">
+                <input class="form__input form__input--check" type="checkbox" name="check" id="tower" value="tower" checked>
+                <label class="form__label form__label--check" for="tower">Удержал башню</label>
+              </div>
+              <div class="form__item form__item--check">
+                <input class="form__input form__input--check" type="checkbox" name="check" id="hotel" value="hotel">
+                <label class="form__label form__label--check" for="hotel">Разгромил отель</label>
+              </div>
+            </fieldset>
+            <fieldset class="form__list form__list--contacts">
+              <div class="form__item form__item--contacts">
+                <label class="form__label" for="phone">Номер телефона</label>
+                <input class="form__input" type="tel" name="contacts" id="phone" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="form__item form__item--contacts">
+                <label class="form__label" for="email">адрес почты</label>
+                <input class="form__input" type="email" name="contacts" id="email" placeholder="Введите почту *" required>
+              </div>
+            </fieldset>
+            <fieldset class="form__list form__list--radio">
+              <legend class="form__title">С каким приложением путешествовали?</legend>
+              <div class="form__item form__item--radio">
+                <input class="form__input form__input--radio" type="radio" name="radio" id="ios" value="ios" checked>
+                <label class="form__label form__label--radio" for="ios">Pink для iOS</legend>
+              </div>
+              <div class="form__item form__item--radio">
+                <input class="form__input form__input--radio" type="radio" name="radio" id="android" value="android">
+                <label class="form__label form__label--radio" for="android">Pink на Android</legend>
+              </div>
+              <div class="form__item form__item--radio">
+                <input class="form__input form__input--radio" type="radio" name="radio" id="win" value="win">
+                <label class="form__label form__label--radio" for="win">Windows Phone</legend>
+              </div>
+            </fieldset>
+            <fieldset class="form__list form__list--textarea">
+              <div class="form__item form__item--textarea">
+                <label class="form__title form__title--textarea" for="textarea">Опишите свои эмоции</label>
+                <textarea class="form__textarea" name="textarea" id="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </div>
+            </fieldset>
+            <button class="form__button" type="submit">Отправить форму</button>
+            <p class="form__text">* — обязательные поля</p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__link" href="#"><img class="page-footer__pic" src="#" width="" height="" alt="Логотип ПИНК">логотип</a>
+      <section class="social">
+        <div class="social__wrap">
+          <div class="social__item">
+            <a class="social__link" href="#"><svg class="social__pic"></svg></a>
+          </div>
+          <div class="social__item">
+            <a class="social__link" href="#"><svg class="social__pic"></svg></a>
+          </div>
+          <div class="social__item">
+            <a class="social__link" href="#"><svg class="social__pic"></svg></a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="#"><svg class="copyright__pic"></svg></a>
+        </div>
+      </section>
+    </footer>
+    </body>
+  </html>
