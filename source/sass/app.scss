@@ -1,0 +1,28 @@
+.app__wrap {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #283645;
+  color: #ffffff;
+}
+
+.app__button {
+
+  color: #ffffff;
+  border: solid #ffffff 2px;
+
+  background-color: inherit;
+}
+
+.app__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.app__text {
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: center;
+}
