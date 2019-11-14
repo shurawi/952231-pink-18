@@ -1,0 +1,71 @@
+.lottery__wrap {
+  padding: 0 20px;
+}
+
+.lottery__pharagraf {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__item--check,
+.form__item--radio {
+  flex-direction: row;
+  align-items: center;
+}
+
+.form__list {
+  border: none;
+}
+
+.form__title {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.form__label,
+.form__input {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form__label--text {
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.form__input--text {
+  border: solid #e5e5e5 2px;
+}
+
+.form__textarea {
+  padding: 20px;
+  height: 197px;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: inherit;
+  color: inherit;
+}
+
+.form__text {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form__span {
+  color: #d22856;
+}
+
+.form__button {
+  background: #2aab6d;
+  color: #ffffff;
+  border-radius: 0;
+  border: none;
+}

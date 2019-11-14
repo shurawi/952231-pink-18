@@ -47,18 +47,18 @@
             <p class="lottery__pharagraf">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните</p>
           </div>
           <form class="lottery__form form" method="post" action="https://echo.htmlacademy.ru">
-            <fieldset class="from__list from__list--name">
+            <fieldset class="form__list form__list--name">
               <div class="form__item form__item--name">
-                <label class="form__label" for="sename">Фамилия:</label>
-                <input class="form__input" type="text" name="name" id="sename" placeholder="Укажите фамилию *" required>
+                <label class="form__label form__label--text" for="sename">Фамилия:</label>
+                <input class="form__input form__input--text" type="text" name="name" id="sename" placeholder="Укажите фамилию *" required>
               </div>
               <div class="form__item form__item--name">
-                <label class="form__label" for="name">Имя:</label>
-                <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
+                <label class="form__label form__label--text" for="name">Имя:</label>
+                <input class="form__input form__input--text" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
               </div>
               <div class="form__item form__item--name">
-                <label class="form__label" for="patronymic">Отчество:</label>
-                <input class="form__input" type="text" name="name" id="patronymic" placeholder="Ну и отчество тоже">
+                <label class="form__label form__label--text" for="patronymic">Отчество:</label>
+                <input class="form__input form__input--text" type="text" name="name" id="patronymic" placeholder="Ну и отчество тоже">
               </div>
             </fieldset>
             <fieldset class="form__list form__list--check">
@@ -90,12 +90,12 @@
             </fieldset>
             <fieldset class="form__list form__list--contacts">
               <div class="form__item form__item--contacts">
-                <label class="form__label" for="phone">Номер телефона</label>
-                <input class="form__input" type="tel" name="contacts" id="phone" placeholder="Номер, пожалуйста">
+                <label class="form__label form__label--text" for="phone">Номер телефона</label>
+                <input class="form__input form__input--text" type="tel" name="contacts" id="phone" placeholder="Номер, пожалуйста">
               </div>
               <div class="form__item form__item--contacts">
-                <label class="form__label" for="email">адрес почты</label>
-                <input class="form__input" type="email" name="contacts" id="email" placeholder="Введите почту *" required>
+                <label class="form__label form__label--text" for="email">адрес почты</label>
+                <input class="form__input form__input--text" type="email" name="contacts" id="email" placeholder="Введите почту *" required>
               </div>
             </fieldset>
             <fieldset class="form__list form__list--radio">
@@ -119,8 +119,8 @@
                 <textarea class="form__textarea" name="textarea" id="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
             </fieldset>
-            <button class="form__button" type="submit">Отправить форму</button>
-            <p class="form__text">* — обязательные поля</p>
+            <button class="form__button button" type="submit">Отправить форму</button>
+            <p class="form__text"><span class="form__span">*</span> — обязательные поля</p>
           </form>
         </div>
       </section>
