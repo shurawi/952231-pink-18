@@ -3,6 +3,21 @@
   flex-direction: column;
 }
 
+.page-footer__wrap--idex {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 120px;
+  }
+}
+
 .social {
   display: flex;
 }

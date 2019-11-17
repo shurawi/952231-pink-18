@@ -1,0 +1,71 @@
+@import "variables.scss";
+
+.research__wrap {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.research__pic {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-left: 1px;
+    margin-right: 71px;
+    width: 45%;
+    height: 276px;
+
+    &::before {
+      content: "24";
+      position: absolute;
+      vertical-align: top;
+      top: 55px;
+      left: 5%;
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 150px;
+      color: #d22856;
+      border: 15px solid #d22856;
+      border-radius: 50%;
+      padding: 7px 33px 17px 32px;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 238px;
+      height: 276px;
+      background-image: url("../img/icon-timer.svg");
+      background-repeat: no-repeat;
+      background-size: 238px 276px;
+      background-position: left top;
+    }
+  }
+}
+
+.research__text {
+  @media (min-width: $tablet-width) {
+    width: 55%;
+  }
+}
+
+.research__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.research__paragraph {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.research__link {
+  font-size: 14px;
+  line-height: 24px;
+  color: #d22856;
+  text-decoration: underline;
+}
