@@ -1,19 +1,38 @@
+@import "variables.scss";
+
 .promo__wrap {
   height: 396px;
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat, url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-position: 0 100%, 0 95%;
+
+  @media (min-width: $tablet-width) {
+    height: 620px;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat, url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    background-position: 118% 100%, 52% 95%;
+  }
 }
 
 .promo__title {
   padding: 25px 35px 0 25px;
+  font-family: "Open Sans Light", "Arial", sans-serif;
   text-align: center;
   font-size: 24px;
-  font-weight: 300;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 50px;
+  }
 }
 
-.promo--photo-pg__wrap {
+.photo-pg__wrap {
   height: 174px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-position: 0 95%;
+
+  @media (min-width: $tablet-width) {
+    height: 330px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    background-position: 52% 95%;
+  }
 }

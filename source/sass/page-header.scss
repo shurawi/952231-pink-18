@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .page-header__wrap {
   position: relative;
   display: flex;
@@ -8,6 +10,34 @@
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0 120px;
+    height: 110px;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+    font-weight: normal;
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+}
+
+.page-header__link {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  min-height: 61px;
+  border-bottom: solid #000000 1px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 160px;
+  }
 }
 
 .page-header__button {
@@ -20,11 +50,32 @@
   background: url("../img/icon-menu-cross.svg") no-repeat center;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header-nav {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+  }
 }
 
 .header-nav__wrap {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .header-nav__item {
@@ -32,6 +83,10 @@
   min-height: 61px;
   text-align: center;
   border-bottom: solid #000000 1px;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 .header-nav__link {
