@@ -20,13 +20,19 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 50px;
+    line-height: 50px;
   }
 }
 
-.promo--photo-pg__wrap {
+.photo-pg__wrap {
   height: 174px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-position: 0 95%;
+
+  @media (min-width: $tablet-width) {
+    height: 330px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    background-position: 52% 95%;
+  }
 }

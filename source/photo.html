@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
   </head>
   <body>
     <header class="page-header">
@@ -39,75 +41,73 @@
     </header>
     <main class="photo-pg">
       <h1 class="photo-pg__title visually-hidden">Фото и видео нашил пользователей</h1>
-      <section class="promo promo--photo-pg">
-        <div class="promo--photo-pg__wrap wrap">
+      <section class="photo-pg__promo">
+        <div class="photo-pg__wrap wrap">
           <h2 class="promo__title">Фотографии пользователей</h2>
         </div>
       </section>
       <section class="photo">
         <div class="photo__wrap wrap">
-          <div class="photo__list">
-            <div class="photo__item photo__item--title">
-              <p class="photo__pharagraf photo__pharagraf--title">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
+          <div class="photo__item photo__item--title">
+            <p class="photo__pharagraf photo__pharagraf--title">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
+          </div>
+          <div class="photo__item photo__item--checked">
+            <img class="photo__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="панорамное фото спуска с горной лестницы">
+            <div class="photo__text photo__text--checked">
+              <p class="photo__pharagraf photo__pharagraf--name">Анна <span class="photo__span">(5 минут назад)</span></p>
+              <p class="photo__pharagraf">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои </p>
+              <p class="photo__pharagraf photo__pharagraf--likes">Нравится: 215</p>
             </div>
-            <div class="photo__item photo__item--checked">
-              <img class="photo__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="панорамное фото спуска с горной лестницы">
-              <div class="photo__text photo__text--checked">
-                <p class="photo__pharagraf photo__pharagraf--name">Анна <span class="photo__span">(5 минут назад)</span></p>
-                <p class="photo__pharagraf">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои </p>
-                <p class="photo__pharagraf photo__pharagraf--likes">Нравится: 215</p>
-              </div>
+          </div>
+          <div class="photo__item">
+            <img class="photo__pic" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="фотосъемка белой машины, тип кузова седан">
+            <div class="photo__text">
+              <p class="photo__pharagraf photo__pharagraf--name">Левон <span class="photo__span">(5 часов назад)</span></p>
+              <p class="photo__pharagraf">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="photo__pharagraf photo__pharagraf--likes">Нравится: 356</p>
             </div>
-            <div class="photo__item">
-              <img class="photo__pic" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="фотосъемка белой машины, тип кузова седан">
-              <div class="photo__text">
-                <p class="photo__pharagraf photo__pharagraf--name">Левон <span class="photo__span">(5 часов назад)</span></p>
-                <p class="photo__pharagraf">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <p class="photo__pharagraf photo__pharagraf--likes">Нравится: 356</p>
-              </div>
-            </div><div class="photo__item">
-              <img class="photo__pic" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="фото барабанной установки ">
-              <div class="photo__text">
-                <p class="photo__pharagraf photo__pharagraf--name">Антон <span class="photo__span">(12 часов назад)</span></p>
-                <p class="photo__pharagraf">Соседи будут рады!</p>
-                <p class="photo__pharagraf photo__pharagraf--likes">Нравится: 666</p>
-              </div>
+          </div><div class="photo__item">
+            <img class="photo__pic" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="фото барабанной установки ">
+            <div class="photo__text">
+              <p class="photo__pharagraf photo__pharagraf--name">Антон <span class="photo__span">(12 часов назад)</span></p>
+              <p class="photo__pharagraf">Соседи будут рады!</p>
+              <p class="photo__pharagraf photo__pharagraf--likes">Нравится: 666</p>
             </div>
-            <div class="photo__item">
-              <img class="photo__pic" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="фото витражных окон сквозь которые открывается вид на облачное небо">
-              <div class="photo__text">
-                <p class="photo__pharagraf photo__pharagraf--name">Борис <span class="photo__span">(20 часов назад)</span></p>
-                <p class="photo__pharagraf">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <p class="photo__pharagraf photo__pharagraf--likes">Нравится: 215</p>
-              </div>
+          </div>
+          <div class="photo__item">
+            <img class="photo__pic" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="фото витражных окон сквозь которые открывается вид на облачное небо">
+            <div class="photo__text">
+              <p class="photo__pharagraf photo__pharagraf--name">Борис <span class="photo__span">(20 часов назад)</span></p>
+              <p class="photo__pharagraf">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="photo__pharagraf photo__pharagraf--likes">Нравится: 215</p>
             </div>
-            <div class="photo__item">
-              <img class="photo__pic" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="фото с выставки Кубанская бахча">
-              <div class="photo__text">
-                <p class="photo__pharagraf photo__pharagraf--name">Сергей <span class="photo__span">(25 часов назад)</span></p>
-                <p class="photo__pharagraf">Самая кубанская в мире!</p>
-                <p class="photo__pharagraf photo__pharagraf--likes">Нравится: 4</p>
-              </div>
+          </div>
+          <div class="photo__item">
+            <img class="photo__pic" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="фото с выставки Кубанская бахча">
+            <div class="photo__text">
+              <p class="photo__pharagraf photo__pharagraf--name">Сергей <span class="photo__span">(25 часов назад)</span></p>
+              <p class="photo__pharagraf">Самая кубанская в мире!</p>
+              <p class="photo__pharagraf photo__pharagraf--likes">Нравится: 4</p>
             </div>
-            <div class="photo__item">
-              <img class="photo__pic" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="фото вида с горы">
-              <div class="photo__text">
-                <p class="photo__pharagraf photo__pharagraf--name">Максим <span class="photo__span">(40 часов назад)</span></p>
-                <p class="photo__pharagraf">Где снег-то?</p>
-                <p class="photo__pharagraf photo__pharagraf--likes">Нравится: 150</p>
-              </div>
+          </div>
+          <div class="photo__item">
+            <img class="photo__pic" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="фото вида с горы">
+            <div class="photo__text">
+              <p class="photo__pharagraf photo__pharagraf--name">Максим <span class="photo__span">(40 часов назад)</span></p>
+              <p class="photo__pharagraf">Где снег-то?</p>
+              <p class="photo__pharagraf photo__pharagraf--likes">Нравится: 150</p>
             </div>
-            <div class="photo__item">
-              <img class="photo__pic" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="фото крыла самолета, на фоне которого восходит солнце">
-              <div class="photo__text">
-                <p class="photo__pharagraf photo__pharagraf--name">Надежда <span class="photo__span">(45 часов назад)</span></p>
-                <p class="photo__pharagraf">Всем GM и взаимные лайки!</p>
-                <p class="photo__pharagraf photo__pharagraf--likes">Нравится: 2560</p>
-              </div>
+          </div>
+          <div class="photo__item">
+            <img class="photo__pic" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="фото крыла самолета, на фоне которого восходит солнце">
+            <div class="photo__text">
+              <p class="photo__pharagraf photo__pharagraf--name">Надежда <span class="photo__span">(45 часов назад)</span></p>
+              <p class="photo__pharagraf">Всем GM и взаимные лайки!</p>
+              <p class="photo__pharagraf photo__pharagraf--likes">Нравится: 2560</p>
             </div>
-            <div class="photo__item photo__item--title">
-              <p class="photo__pharagraf photo__pharagraf--title">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</p>
-            </div>
+          </div>
+          <div class="photo__item photo__item--title">
+            <p class="photo__pharagraf photo__pharagraf--title">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</p>
           </div>
         </div>
       </section>
@@ -116,12 +116,10 @@
           <div class="video__item">
             <video src="#" controls></video>
           </div>
-        </div>
-      </section>
-      <section class="controls">
-        <div class="controls__wrap wrap">
-          <button class="controls__button controls__button--active button" type="button">Запостить</button>
-          <button class="controls__button controls__button--disabled button" type="button">Отмена</button>
+          <div class="vide__control">
+            <button class="vide__button video__button--active button" type="button">Запостить</button>
+            <button class="vide__button video__button--disabled button" type="button">Отмена</button>
+          </div>
         </div>
       </section>
     </main>

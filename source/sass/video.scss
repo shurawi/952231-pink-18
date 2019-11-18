@@ -1,0 +1,31 @@
+@import "variables.scss";
+
+.video__wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.vide__control {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.video__button--active {
+  background-color: #ffffff;
+  color: #d22856;
+  border: solid #d22856 2px;
+}
+
+.video__button--disabled {
+  background-color: #ffffff;
+  color: #dddfe0;
+  border: solid #dddfe0 2px;
+}

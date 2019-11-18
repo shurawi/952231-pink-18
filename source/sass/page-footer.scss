@@ -1,10 +1,6 @@
 .page-footer__wrap {
   display: flex;
   flex-direction: column;
-}
-
-.page-footer__wrap--idex {
-  display: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -15,6 +11,14 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 120px;
+  }
+}
+
+.page-footer__wrap--idex {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }
 

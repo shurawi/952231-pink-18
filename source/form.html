@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
   </head>
   <body>
     <header class="page-header">
@@ -38,8 +40,10 @@
       </div>
     </header>
     <main class="form-pg">
-      <section class="promo promo--form-pg">
-        <h2 class="promo__title">Конкурс на самое безбашенное путешествие с Пинк<h2>
+      <section class="form-pg__promo">
+        <div class="photo-pg__wrap wrap">
+          <h2 class="promo__title">Конкурс на самое безбашенное путешествие с Пинк<h2>
+        </div>
       </section>
       <section class="lottery">
         <div class="lottery__wrap wrap">
@@ -63,39 +67,44 @@
             </fieldset>
             <fieldset class="form__list form__list--check">
               <legend class="form__title form__title--check">Ваши безбашенные достижения в путешествии</legend>
-              <div class="form__item form__item--check">
-                <input class="form__input form__input--check" type="checkbox" name="check" id="shark" value="shark" checked>
-                <label class="form__label form__label--check" for="shark">Сделал селфи с акулой</label>
-              </div>
-              <div class="form__item form__item--check">
-                <input class="form__input form__input--check" type="checkbox" name="check" id="beach" value="beach" checked>
-                <label class="form__label form__label--check" for="beach">Обгорел на пляже</label>
-              </div>
-              <div class="form__item form__item--check">
-                <input class="form__input form__input--check" type="checkbox" name="check" id="ChuckNorris" value="ChuckNorris">
-                <label class="form__label form__label--check" for="ChuckNorris">Видел Чака Норриса</label>
-              </div>
-              <div class="form__item form__item--check">
-                <input class="form__input form__input--check" type="checkbox" name="check" id="souvenirs" value="souvenirs">
-                <label class="form__label form__label--check" for="souvenirs">Накупил сувениров</label>
-              </div>
-              <div class="form__item form__item--check">
-                <input class="form__input form__input--check" type="checkbox" name="check" id="tower" value="tower" checked>
-                <label class="form__label form__label--check" for="tower">Удержал башню</label>
-              </div>
-              <div class="form__item form__item--check">
-                <input class="form__input form__input--check" type="checkbox" name="check" id="hotel" value="hotel">
-                <label class="form__label form__label--check" for="hotel">Разгромил отель</label>
+              <div class="form__container form__container--check">
+                <div class="form__item form__item--check">
+                  <input class="form__input form__input--check" type="checkbox" name="check" id="shark" value="shark" checked>
+                  <label class="form__label form__label--check" for="shark">Сделал селфи с акулой</label>
+                </div>
+                <div class="form__item form__item--check">
+                  <input class="form__input form__input--check" type="checkbox" name="check" id="beach" value="beach" checked>
+                  <label class="form__label form__label--check" for="beach">Обгорел на пляже</label>
+                </div>
+                <div class="form__item form__item--check">
+                  <input class="form__input form__input--check" type="checkbox" name="check" id="ChuckNorris" value="ChuckNorris">
+                  <label class="form__label form__label--check" for="ChuckNorris">Видел Чака Норриса</label>
+                </div>
+                <div class="form__item form__item--check">
+                  <input class="form__input form__input--check" type="checkbox" name="check" id="souvenirs" value="souvenirs">
+                  <label class="form__label form__label--check" for="souvenirs">Накупил сувениров</label>
+                </div>
+                <div class="form__item form__item--check">
+                  <input class="form__input form__input--check" type="checkbox" name="check" id="tower" value="tower" checked>
+                  <label class="form__label form__label--check" for="tower">Удержал башню</label>
+                </div>
+                <div class="form__item form__item--check">
+                  <input class="form__input form__input--check" type="checkbox" name="check" id="hotel" value="hotel">
+                  <label class="form__label form__label--check" for="hotel">Разгромил отель</label>
+                </div>
               </div>
             </fieldset>
             <fieldset class="form__list form__list--contacts">
-              <div class="form__item form__item--contacts">
-                <label class="form__label form__label--text" for="phone">Номер телефона</label>
-                <input class="form__input form__input--text" type="tel" name="contacts" id="phone" placeholder="Номер, пожалуйста">
-              </div>
-              <div class="form__item form__item--contacts">
-                <label class="form__label form__label--text" for="email">адрес почты</label>
-                <input class="form__input form__input--text" type="email" name="contacts" id="email" placeholder="Введите почту *" required>
+              <legend class="form__title form__title--contacts">Контактная информация</legend>
+              <div class="form__container form__container--contacts">
+                <div class="form__item form__item--contacts">
+                  <label class="form__label form__label--text form__label--contacts" for="phone">Номер телефона</label>
+                  <input class="form__input form__input--text form__input--contacts" type="tel" name="contacts" id="phone" placeholder="Номер, пожалуйста">
+                </div>
+                <div class="form__item form__item--contacts">
+                  <label class="form__label form__label--text form__label--contacts" for="email">адрес почты</label>
+                  <input class="form__input form__input--text form__input--contacts" type="email" name="contacts" id="email" placeholder="Введите почту *" required>
+                </div>
               </div>
             </fieldset>
             <fieldset class="form__list form__list--radio">
@@ -119,8 +128,10 @@
                 <textarea class="form__textarea" name="textarea" id="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
             </fieldset>
-            <button class="form__button button" type="submit">Отправить форму</button>
-            <p class="form__text"><span class="form__span">*</span> — обязательные поля</p>
+            <div class="form__submit">
+              <button class="form__button button" type="submit">Отправить форму</button>
+              <p class="form__text"><span class="form__span">*</span> — обязательные поля</p>
+            </div>
           </form>
         </div>
       </section>

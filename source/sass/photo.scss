@@ -1,20 +1,50 @@
-.photo__list {
+@import "variables.scss";
+
+.photo__wrap {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .photo__item {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.photo__item--title {
+  padding: 50px 35px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 95px 100px 80px 100px;
+    width: 100%;
+  }
 }
 
 .photo__item--checked {
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .photo__text {
   padding: 0 20px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .photo__text--checked {
@@ -33,6 +63,10 @@
 
 .photo__pharagraf--title {
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .photo__pharagraf--likes {
@@ -54,16 +88,4 @@
 .photo__span {
   font-weight: normal;
   text-transform: uppercase;
-}
-
-.controls__button--active {
-  background-color: #ffffff;
-  color: #d22856;
-  border: solid #d22856 2px;
-}
-
-.controls__button--disabled {
-  background-color: #ffffff;
-  color: #dddfe0;
-  border: solid #dddfe0 2px;
 }
