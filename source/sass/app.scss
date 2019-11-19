@@ -1,13 +1,15 @@
 @import "variables.scss";
 
 .app__wrap {
-  height: 668px;
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat, url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  background-position: 0 46%, 0 0%;
   color: #ffffff;
+}
+
+.app__headline {
+  height: 396px;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat, url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-position: 0 100%, 0 0%;
 
   @media (min-width: $tablet-width) {
     height: 620px;
@@ -16,11 +18,8 @@
   }
 }
 
-.app__headline {
-  padding-top: 30px;
-}
-
 .app__title {
+  padding: 20px 30px;
   font-family: "Open Sans Light", "Arial", sans-serif;
   text-align: center;
   font-size: 24px;
@@ -34,7 +33,7 @@
 }
 
 .app__container {
-  margin: 130% -20px 0 -20px;
+  padding: 0 20px 15px 20px;;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -48,25 +47,24 @@
 }
 
 .app__button {
-  margin: 20px 20px;
+  margin-top: 30px;
+  height: 54px;
   color: #ffffff;
   border: solid #ffffff 2px;
-
   background-color: inherit;
 }
 
 .app__list {
   display: flex;
-  margin: 0 20px;
+  margin-top: 35px;
   align-items: center;
 }
 
 .app__item {
-  margin: 0 30px 0 20px;
+  margin-left: 37px;
 }
 
 .app__text {
-  padding: 0 20px;
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
