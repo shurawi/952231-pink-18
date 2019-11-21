@@ -1,9 +1,11 @@
 @import "variables.scss";
 
 .app__wrap {
-  display: flex;
-  flex-direction: column;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .app__headline {
@@ -14,7 +16,7 @@
   @media (min-width: $tablet-width) {
     height: 620px;
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat, url("../img/bg-back-tablet@1x.jpg") no-repeat;
-    background-position: 118% 100%, 52% 95%;
+    background-position: 54% 100%, 52% 95%;
   }
 }
 
@@ -26,22 +28,22 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 35px 0 25px;
+    padding: 95px 0 0 74px;
+    width: 270px;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 46px;
   }
 }
 
 .app__container {
   padding: 0 20px 15px 20px;;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   background-color: #1d2631;
 
   @media (min-width: $tablet-width) {
-    margin: 0 20px;
+    position: absolute;
+    width: 350px;
+    margin: 237px 0 0 0;
+    top: 0;
     background-color: rgba(29, 38, 49, 0);
   }
 }
@@ -52,16 +54,36 @@
   color: #ffffff;
   border: solid #ffffff 2px;
   background-color: inherit;
+
+  &:hover {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+  @media (min-width: $tablet-width) {
+    width: 300px;;
+  }
 }
 
 .app__list {
   display: flex;
   margin-top: 35px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+  }
 }
 
 .app__item {
   margin-left: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+  }
 }
 
 .app__text {
@@ -69,4 +91,9 @@
   line-height: 24px;
   font-weight: normal;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 26px 0 0 -20px;
+    font-size: 18px;
+  }
 }

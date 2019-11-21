@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .greeting__wrap {
   margin: 37px auto 30px auto;
 }
@@ -9,7 +11,19 @@
   font-weight: normal;
   text-align: center;
 
-  &:last-child {
-    padding-bottom: 0;
+  @media (min-width: $tablet-width) {
+    padding: 17px 0 0 0;
+    font-size: 40px;
+    line-height: 35px;
+    font-family: "Open Sans Light", "Arial", sans-serif;
+  }
+}
+
+.greeting__title:last-child {
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 50px 0 50px;
+    line-height: 45px;
   }
 }

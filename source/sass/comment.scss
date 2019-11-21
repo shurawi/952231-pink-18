@@ -1,13 +1,30 @@
+@import "variables.scss";
+
 .comment__wrap {
   padding: 45px 0 0 0;
 }
 
+.comment__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+  }
+}
+
 .comment__title {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   text-align: center;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 35px;
+    order: 2;
+    font-size: 20px;
+  }
 }
 
 .comment__text {
@@ -16,4 +33,22 @@
   line-height: 30px;
   font-weight: normal;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    order: 1;
+    font-size: 18px;
+  }
+}
+
+.comment__span {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    order: 3;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  }
 }

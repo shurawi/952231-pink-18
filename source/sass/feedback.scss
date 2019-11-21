@@ -23,7 +23,7 @@
   padding: 0 0 25px 0;
 
   @media (min-width: $tablet-width) {
-    width: 45%;
+    width: 50%;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,7 +33,7 @@
 
 .feedback__item--address {
   @media (min-width: $tablet-width) {
-    margin-left: 25%;
+    margin: 25px 0 0 25%;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,11 +43,12 @@
 
 .feedback__headline {
   font-size: 24px;
-  line-height: 24px;
+  line-height: 25px;
   font-weight: lighter;
   font-family: "Open Sans Light", "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 9px;
     font-size: 40px;
     line-height: 40px;
   }
@@ -57,24 +58,31 @@
   padding: 0 0 10px 0;
   font-size: 18px;
   line-height: 18px;
-  font-weight: bold;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   text-align: center;
 }
 
 .feedback__text {
   margin: 0;
   font-size: 24px;
-  line-height: 24px;
-  font-weight: lighter;
+  line-height: 25px;
+  font-family: "Open Sans Light", "Arial", sans-serif;
   color: #d22856;
   text-align: center;
 }
 
+.feedback__text--address {
+  @media (min-width: $tablet-width) {
+    padding: 7px 20px 0 20px;
+  }
+}
+
 .feedback__map {
   position: relative;
+  margin-top: 15px;
   height: 210px;
   background: #ffffff url("../img/bg-map-mobile@1x.png") no-repeat;
-  background-position: 0% 90%;
+  background-position: 0% 102%;
 
     &::before {
       position: absolute;
@@ -84,5 +92,9 @@
       height: 100%;
       background: url("../img/bg-triangle-white-footer.svg") no-repeat;
       background-size: 100%;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 10px;
     }
 }
