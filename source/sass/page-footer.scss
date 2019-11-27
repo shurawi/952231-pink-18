@@ -25,6 +25,9 @@
 }
 
 .page-footer__link {
+  margin-top: 41px;
+  text-align: center;
+
   @media (min-width: $tablet-width) {
     padding: 0 0 10px 10px;
   }
@@ -32,6 +35,8 @@
 
 .social {
   display: flex;
+  justify-content: center;
+  margin: 35px 0 0 15px;
 
   @media (min-width: $tablet-width) {
     padding-left: 20px;
@@ -46,8 +51,9 @@
 .social__link {
   display: flex;
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+  background-position: center;
   border-radius: 50%;
   border: solid #e9ebec 2px;
 
@@ -57,12 +63,6 @@
 
   &:active {
     border: solid #e9ebec 2px;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 50px;
-    height: 50px;
-    background-position: center;
   }
 }
 
@@ -97,11 +97,10 @@
 }
 
 .copyright__text {
-  @media (min-width: $tablet-width) {
-    padding: 5px 10px 0 0;
-    font-size: 14px;
-    line-height: 18px;
-  }
+  margin: 42px 9px 0 0;
+  padding: 5px 5px 52px 0;
+  font-size: 14px;
+  line-height: 18px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -111,11 +110,7 @@
 
 .copyright__link {
   @media (min-width: $tablet-width) {
-    padding-top: 10px;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-right: 10px;
+    padding: 10px 10px 0 0;
   }
 }
 

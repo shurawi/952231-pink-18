@@ -3,6 +3,7 @@
 .photo__wrap {
   display: flex;
   flex-direction: column;
+  background-color: inherit;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -11,16 +12,28 @@
 }
 
 .photo__item {
-  padding: 0 20px;
+  margin: 0 20px 20px 20px;
+  background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
     width: 50%;
   }
 }
 
+.photo__item--checked {
+  margin: 0 0 20px 0;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
 .photo__item--title {
-  padding: 50px 35px;
+  padding: 42px 35px 51px 35px;
+  margin: 0;
   text-align: center;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     padding: 95px 100px 80px 100px;
@@ -28,16 +41,16 @@
   }
 }
 
-.photo__item--checked {
-  padding: 0;
+.photo__item--conclusion {
+  margin: 22px 0 0 0;
+  text-align: center;
+  background-color: #ffffff;
 
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
 }
 
 .photo__text {
-  padding: 0 20px;
+  margin-bottom: 22px;
+  padding: 13px 20px 0 20px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -48,17 +61,25 @@
 }
 
 .photo__text--checked {
-  padding: 0 40px;
+  margin: -5px 20px 0 20px;
+  padding: 13px 20px 22px 20px;
+  background-color:  #f2f2f2;
 }
 
 .photo__pharagraf {
   margin: 0;
+  padding-right: 10px;
   font-size: 14px;
   line-height: 24px;
 }
 
+.photo__pharagraf--title {
+  margin: 0;
+  padding-right: 0;
+}
+
 .photo__pharagraf--name {
-  font-weight: bold;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
 }
 
 .photo__pharagraf--title {
@@ -69,15 +90,27 @@
   }
 }
 
-.photo__pharagraf--likes {
+.photo__pharagraf--conclusion:last-child {
+  padding: 3px 0 42px 0;
+  line-height: 30px;
+}
+
+.photo__button {
+  padding: 8px 0 0 30px;
   position: relative;
-  padding-left: 20px;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: left;
+  text-transform: uppercase;
   color: #d22856;
+  border: none;
+  background-color: #f2f2f2;
+  cursor: pointer;
 
   &::before {
     content: "";
     position: absolute;
-    top: 6px;
+    top: 16px;
     left: 0;
     width: 13px;
     height: 13px;
@@ -86,6 +119,8 @@
 }
 
 .photo__span {
-  font-weight: normal;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 24px;
   text-transform: uppercase;
 }
