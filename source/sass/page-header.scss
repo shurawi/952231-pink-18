@@ -21,6 +21,7 @@
     text-transform: none;
     font-weight: normal;
     background-color: rgba(40, 54, 69, 0.6);
+    z-index: 2;
   }
 }
 
@@ -30,6 +31,7 @@
   align-items: center;
   min-height: 61px;
   border-bottom: solid #000000 1px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
 
   @media (min-width: $tablet-width) {
     min-height: 112px;
@@ -42,8 +44,8 @@
 
 .page-header__button {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 13px;
+  right: 17px;
   font-size: 0;
   width: 30px;
   height: 30px;
@@ -75,21 +77,59 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-around;
+    margin-left: 20px;
   }
 }
 
 .header-nav__item {
-  padding-top: 16px;
+  padding: 16px 0 15px 0;
   min-height: 61px;
   text-align: center;
   border-bottom: solid #000000 1px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
 
   @media (min-width: $desktop-width) {
     border: none;
+    box-shadow: none;
+    width: 25%;
   }
 }
 
 .header-nav__link {
   text-decoration: none;
   color: inherit;
+}
+
+.header-nav__link[href] {
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.header-nav__link--index {
+  @media (min-width: $desktop-width) {
+    padding-right: 20px;
+  }
+}
+
+.header-nav__link--photo {
+  @media (min-width: $desktop-width) {
+    padding-right: 20px;
+  }
+}
+
+.header-nav__link--form {
+  @media (min-width: $desktop-width) {
+    padding-right: 10px;
+  }
+}
+
+.header-nav__link--academy {
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+  }
 }

@@ -1,10 +1,40 @@
+@import "variables.scss";
+
 .greeting__wrap {
-  height: 250px;
+  margin: 37px auto 30px auto;
 }
 
 .greeting__title {
-  padding: 0 40px;
-  font-size: 24;
-  font-weight: normal;
+  padding: 0 40px 27px 40px;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Open Sans Light", "Arial", sans-serif;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 0 0 0;
+    font-size: 40px;
+    line-height: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 29px 0 0 0;
+    font-size: 50px;
+    line-height: 55px;
+  }
+}
+
+.greeting__title:last-child {
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 50px 0 50px;
+    line-height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 10% 0 10%;
+    padding: 5px 150px 0 150px;
+    line-height: 55px;
+  }
 }
