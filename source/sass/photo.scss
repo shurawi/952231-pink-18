@@ -36,7 +36,7 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    padding: 95px 100px 80px 100px;
+    padding: 91px 100px 80px 100px;
     width: 100%;
   }
 }
@@ -45,7 +45,6 @@
   margin: 22px 0 0 0;
   text-align: center;
   background-color: #ffffff;
-
 }
 
 .photo__text {
@@ -63,7 +62,7 @@
 .photo__text--checked {
   margin: -5px 20px 0 20px;
   padding: 13px 20px 22px 20px;
-  background-color:  #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .photo__pharagraf {
@@ -76,18 +75,15 @@
 .photo__pharagraf--title {
   margin: 0;
   padding-right: 0;
-}
-
-.photo__pharagraf--name {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
-}
-
-.photo__pharagraf--title {
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
   }
+}
+
+.photo__pharagraf--name {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
 }
 
 .photo__pharagraf--conclusion:last-child {
