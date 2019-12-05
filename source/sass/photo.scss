@@ -18,21 +18,16 @@
   @media (min-width: $tablet-width) {
     width: 45.5%;
   }
-}
 
-.photo__item:nth-child(2n):not(.photo__item--checked) {
-  @media (min-width: $tablet-width) {
-    margin: 0 18px 20px 0;
+  @media (min-width: $desktop-width) {
+    margin: 0 20px 20px 20px;
+    width: 25%;
   }
 }
 
-.photo__item--checked {
-  margin: 0 0 20px 0;
-  background-color: #ffffff;
-
+.photo__item:nth-child(2n) {
   @media (min-width: $tablet-width) {
-    width: 100%;
-    margin: -4px 0 53px 0;
+    margin: 0 18px 20px 0;
   }
 }
 
@@ -46,10 +41,14 @@
     padding: 91px 100px 80px 100px;
     width: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 91px 100px;
+  }
 }
 
 .photo__item--conclusion {
-  margin: 22px 0 0 0;
+  margin: 25px 0 0 0;
   text-align: center;
   background-color: #ffffff;
 
@@ -60,22 +59,21 @@
 }
 
 .photo__pic {
+  display: block;
+
   @media (min-width: $tablet-width) {
     width: 300px;
     height: 300px;
   }
-}
 
-.photo__pic--checked {
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    height: 510px;
+  @media (min-width: $desktop-width) {
+    height: auto;
   }
 }
 
 .photo__text {
   margin-bottom: 22px;
-  padding: 13px 20px 0 20px;
+  padding: 17px 20px 0 17px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -89,44 +87,33 @@
   }
 }
 
-.photo__text--checked {
-  margin: -5px 20px 0 20px;
-  padding: 13px 20px 22px 20px;
-  background-color: #f2f2f2;
-
-  @media (min-width: $tablet-width) {
-    position: relative;
-    padding: 23px 20px 22px 28px;
-    height: auto;
-  }
-}
-
-.photo__pharagraf {
+.photo__paragraph {
   margin: 0;
   padding-right: 10px;
   font-size: 14px;
   line-height: 24px;
 }
 
-.photo__pharagraf--title {
+.photo__paragraph--title {
   margin: 0;
   padding-right: 0;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
+    padding: 0 210px;
     font-size: 18px;
   }
 }
 
-.photo__pharagraf--name {
+.photo__paragraph--name {
   font-family: "Open Sans Bold", "Arial", sans-serif;
 }
 
-.photo__pharagraf--conclusion {
-  font-size: 18px;
+.photo__paragraph--conclusion {
+  font-size: 14px;
 }
 
-.photo__pharagraf--conclusion:last-child {
+.photo__paragraph--conclusion:last-child {
   padding: 3px 0 42px 0;
   line-height: 30px;
 }
@@ -169,22 +156,6 @@
       width: 13px;
       height: 13px;
       background: url("../img/icon-heart.svg") no-repeat;
-    }
-  }
-}
-
-.photo__button--checked {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    padding-bottom: 0;
-    top: 24px;
-    right: 58px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 4px;
-      right: -28px;
     }
   }
 }

@@ -1,0 +1,91 @@
+@import "variables.scss";
+
+.panorama__wrap {
+  margin-bottom: 20px;
+
+}
+
+.panorama__item {
+  position: relative;
+}
+
+.panorama__title {
+  margin: 45px 36px 48px 36px;
+}
+
+.panorama__pic {
+  display: block;
+}
+
+.panorama__checked {
+  position: absolute;
+  padding: 6px 0 6px 18px;
+  width: 140px;
+  top: 0;
+  right: 20px;
+  background-color: #d22856;
+}
+
+.panorama__bold {
+  font-size: 12px;
+  line-height: 24px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.panorama__headliner {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+}
+
+.panorama__text {
+  margin: 0 20px;
+  padding: 20px 0 21px 17px;
+  background-color: #f2f2f2;
+}
+
+.panorama__paragraph {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.panorama__paragraph--name {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+}
+
+.panorama__span {
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.panorama__button {
+  padding: 8px 0 0 30px;
+  position: relative;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #d22856;
+  border: none;
+  background-color: #f2f2f2;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    background: url("../img/icon-heart.svg") no-repeat;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+      }
+    }
+  }

@@ -27,7 +27,7 @@
 
 .page-header__link {
   display: flex;
-  padding: 20px;
+  padding: 17px;
   align-items: center;
   min-height: 61px;
   border-bottom: solid #000000 1px;
@@ -38,7 +38,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 160px;
+    margin-right: 102px;
+    padding: 0 0 13px 10px;
+  }
+}
+
+.peage-header__logo {
+  @media (min-width: $desktop-width) {
+    width: 146px;
+    height: 40px;
   }
 }
 
@@ -92,6 +100,12 @@
     border: none;
     box-shadow: none;
     width: 25%;
+  }
+}
+
+.header-nav__item:last-child {
+  @media (min-width: $desktop-width) {
+    padding: 16px 0 0 22px;;
   }
 }
 
