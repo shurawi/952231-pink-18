@@ -2,19 +2,34 @@
 
 .panorama__wrap {
   margin-bottom: 20px;
-
 }
 
 .panorama__item {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 51px;
+  }
 }
 
 .panorama__title {
   margin: 45px 36px 48px 36px;
+
+  @media (min-width: $tablet-width) {
+    margin: 92px 67px 75px 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 92px 300px 87px 300px;
+  }
 }
 
 .panorama__pic {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 509px;
+  }
 }
 
 .panorama__checked {
@@ -24,6 +39,17 @@
   top: 0;
   right: 20px;
   background-color: #d22856;
+
+  @media (min-width: $tablet-width) {
+    padding: 6px 0 6px 22px;
+    top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 54px;
+    right: 130px;
+    padding: 6px 0 6px 20px;
+  }
 }
 
 .panorama__bold {
@@ -38,12 +64,26 @@
   line-height: 30px;
   text-align: center;
   color: #283645;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .panorama__text {
   margin: 0 20px;
   padding: 20px 0 21px 17px;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 25px 0 23px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 130px;
+    padding: 21px 0 23px 28px;
+  }
 }
 
 .panorama__paragraph {
@@ -86,6 +126,27 @@
 
     @media (min-width: $tablet-width) {
       display: none;
-      }
     }
   }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 18px;
+    right: 54px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 14px;
+      right: -28px;
+      width: 13px;
+      height: 13px;
+      background: url("../img/icon-heart.svg") no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 14px;
+    right: 59px;
+  }
+}

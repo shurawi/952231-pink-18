@@ -27,7 +27,10 @@
 }
 
 .promo__title--photo {
-  @media (min-width: $tablet-width) {
+  padding: 74px 24px 0 25px;
+  line-height: 56px;
+
+  @media (min-width: $desktop-width) {
     padding: 175px 416px 0 416px;
     font-size: 50px;
     line-height: 58px;
@@ -45,7 +48,7 @@
     background-position: 50% 28%;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     height: 394px;
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
     background-position: 50% 0;

@@ -1,0 +1,47 @@
+@import "variables.scss";
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+    padding: 0 0 0 120px;
+  }
+}
+
+.copyright__text {
+  margin: 42px 9px 0 0;
+  padding: 5px 5px 52px 0;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding: 11px 6px 0 0;
+  }
+}
+
+.copyright__link {
+  @media (min-width: $tablet-width) {
+    margin: 37px 0 0 0;
+    padding: 10px 0 0 0;
+  }
+}
+
+.copyright__pic {
+  fill: #d22856;
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: #bec2c7;
+  }
+}
