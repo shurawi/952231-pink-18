@@ -1,0 +1,64 @@
+@import "variables.scss";
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin: 35px 0 0 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 35px 22px 0 15px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 35%;
+    padding: 3px 0 0 35px;
+  }
+}
+
+.social__item {
+  margin-right: 14px;
+  margin-left: 0;
+}
+
+.social__link {
+  display: flex;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  border-radius: 50%;
+  border: solid #e9ebec 2px;
+
+  &:hover {
+    border: solid #283645 2px;
+  }
+
+  &:active {
+    border: solid #e9ebec 2px;
+  }
+}
+
+.social__pic {
+  position: absolute;
+  fill: #d22856;
+
+  &:active {
+    fill: #f1becc;
+  }
+}
+
+.social__pic--tw {
+  top: 18px;
+  left: 16px;
+}
+
+.social__pic--fb {
+  top: 14px;
+  left: 20px;
+}
+
+.social__pic--yt {
+  top: 18px;
+  left: 18px;
+}

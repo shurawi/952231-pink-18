@@ -5,12 +5,58 @@
   flex-direction: column;
   padding: 20px 20px;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+    padding: 20px 20px 50px 20px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.video__baner {
+  @media (min-width: $tablet-width) {
+    width: 87%;
+    margin-top: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 33.5%;
+    margin: 37px 0 0 60px;
+  }
+}
+
+.video__container {
+  @media (min-width: $desktop-width) {
+    width: 60%;
+    padding: 0 0 0 40px;
+  }
 }
 
 .video__list {
   display: flex;
   justify-content: space-around;
   margin: 35px 27px 0 17px;
+
+  @media (min-width: $tablet-width) {
+    margin: 38px 0 0 48px;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 50%;
+  }
+}
+
+.video__item {
+  @media (min-width: $tablet-width) {
+    margin: 8px 0 36px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 21px 0;
+  }
 }
 
 .video__item--crop {
@@ -27,8 +73,33 @@
   }
 }
 
+.video__item--fill {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 0 0 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 6px 0;
+  }
+}
+
 .video__item--contrast {
   margin-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin: -4px 0 0 5px;
+    padding: 0 0 10px 0;
+  }
+}
+
+.video__line {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    height: 2px;
+    background-color: #283645;
+  }
 }
 
 .video__line--crop {
@@ -38,6 +109,58 @@
   top: 84px;
   left: -15px;
   background-color: #283645;
+
+  @media (min-width: $tablet-width) {
+    top: 11px;
+    left: 52px;
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 19px;
+    left: 94px;
+    width: 290px;
+  }
+}
+
+.video__line--fill {
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    left: 52px;
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 19px;
+    left: 94px;
+    width: 290px;
+  }
+}
+
+.video__line--contrast {
+  @media (min-width: $tablet-width) {
+    top: 8px;
+    left: 47px;
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 15px;
+    left: 87px;
+    width: 290px;
+  }
+}
+
+.video__slider {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: solid #d22856 2px;
+    background-color: #ffffff;
+    z-index: 2;
+  }
 }
 
 .video__slider--crop {
@@ -50,7 +173,42 @@
   border: solid #d22856 2px;
   background-color: #ffffff;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    top: 5px;
+    right: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 12px;
+    left: 164px;
+  }
 }
+
+.video__slider--fill {
+  @media (min-width: $tablet-width) {
+    top: 3px;
+    left: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 14px;
+    left: 341px;
+  }
+}
+
+.video__slider--contrast {
+  @media (min-width: $tablet-width) {
+    top: 2px;
+    left: 144px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 10px;
+    left: 248px;
+  }
+}
+
 
 .video__pic {
   fill: #b5b9be;
@@ -62,6 +220,28 @@
   &:active {
     fill: #d22856;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 25px;
+    height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+.video__pic--contrast {
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .video__pic--active {
@@ -70,16 +250,38 @@
 
 .video__controls {
   margin: 105px 0 14px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 41px 0 14px 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 122px 0 14px 48px;
+  }
 }
 
 .video__button {
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 185px;
+    height: 55px;
+  }
 }
 
 .video__button--active {
   background-color: #ffffff;
   color: #d22856;
   border: solid #d22856 2px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 39px;
+  }
 }
 
 .video__button--disabled {

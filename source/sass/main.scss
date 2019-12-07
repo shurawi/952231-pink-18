@@ -4,3 +4,9 @@
     margin-top: -160px;
   }
 }
+
+.photo-pg {
+  @media (min-width: $desktop-width) {
+    margin-top: -108px;
+  }
+}

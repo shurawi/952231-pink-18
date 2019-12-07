@@ -9,6 +9,11 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin: 0 25%;
+  }
 }
 
 .photo__item {
@@ -16,16 +21,30 @@
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 45.5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 -8px 52px 28px;
+    width: 25%;
   }
 }
 
-.photo__item--checked {
-  margin: 0 0 20px 0;
-  background-color: #ffffff;
-
+.photo__item:nth-child(2n) {
   @media (min-width: $tablet-width) {
-    width: 100%;
+    margin: 0 18px 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 -8px 52px 28px;
+  }
+}
+
+.photo__item:nth-child(4),
+.photo__item:nth-child(5),
+.photo__item:nth-child(6) {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -39,56 +58,95 @@
     padding: 91px 100px 80px 100px;
     width: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 91px 100px;
+  }
 }
 
 .photo__item--conclusion {
-  margin: 22px 0 0 0;
+  margin: 25px 0 0 0;
   text-align: center;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding: 19px 13px 46px 13px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 256px 39px 46px;
+  }
+}
+
+.photo__pic {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: auto;
+  }
 }
 
 .photo__text {
   margin-bottom: 22px;
-  padding: 13px 20px 0 20px;
+  padding: 17px 20px 0 17px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-bottom: 5px;
+    padding: 23px 20px 0 29px;
+    height: 150px;
     background-color: #f2f2f2;
   }
 }
 
-.photo__text--checked {
-  margin: -5px 20px 0 20px;
-  padding: 13px 20px 22px 20px;
-  background-color: #f2f2f2;
-}
-
-.photo__pharagraf {
+.photo__paragraph {
   margin: 0;
   padding-right: 10px;
   font-size: 14px;
   line-height: 24px;
 }
 
-.photo__pharagraf--title {
+.photo__paragraph--title {
   margin: 0;
   padding-right: 0;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
+    padding: 0 210px;
     font-size: 18px;
   }
 }
 
-.photo__pharagraf--name {
+.photo__paragraph--name {
   font-family: "Open Sans Bold", "Arial", sans-serif;
 }
 
-.photo__pharagraf--conclusion:last-child {
+.photo__paragraph--conclusion {
+  font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0;
+  }
+}
+
+.photo__paragraph--conclusion:last-child {
   padding: 3px 0 42px 0;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .photo__button {
@@ -111,6 +169,25 @@
     width: 13px;
     height: 13px;
     background: url("../img/icon-heart.svg") no-repeat;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+    padding: 0 0 16px 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      right: 10px;
+      width: 13px;
+      height: 13px;
+      background: url("../img/icon-heart.svg") no-repeat;
+    }
   }
 }
 
