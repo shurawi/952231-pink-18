@@ -1,10 +1,12 @@
 @import "variables.scss";
 
-.lottery__wrap {
-  padding: 0 20px;
+.lottery__text {
+  padding: 46px 20px 0 20px;
 }
 
 .lottery__pharagraf {
+  margin: 0;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
 }

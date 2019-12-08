@@ -1,20 +1,19 @@
 @import "variables.scss";
 
-.form {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+.form__wrap {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .form__list {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
 .form__list--name {
+  margin: 4px 14px 23px 14px;
+
   @media (min-width: $tablet-width) {
     order: 1;
   }
@@ -45,6 +44,9 @@
 }
 
 .form__list--check {
+  margin-top: 15px;
+  background-color: #f2f2f2;
+
   @media (min-width: $tablet-width) {
     order: 4;
   }
@@ -52,6 +54,12 @@
   @media (min-width: $desktop-width) {
     width: 100%;
   }
+}
+
+.form__list--radio {
+  margin-top: 15px;
+  padding-top: 40px;
+  background-color: #f2f2f2;
 }
 
 .form__list--textarea {
@@ -77,16 +85,26 @@
 }
 
 .form__container--contacts {
+  margin: 26px 14px 23px 14px;
+
   @media (min-width: $desktop-width) {
     display: flex;
   }
 }
 
 .form__container--check {
+  margin-top: 36px;
+  padding: 7px 0 0 14px;
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+.form__container--radio {
+  margin-top: 22px;
+  padding: 7px 0 0 14px;
 }
 
 .form__item {
@@ -94,7 +112,13 @@
   flex-direction: column;
 }
 
+.form__item--name {
+  margin-bottom: 19px;
+}
+
 .form__item--contacts {
+  margin-bottom: 16px;
+
   @media (min-width: $desktop-width) {
     width: 47%;
     display: flex;
@@ -106,19 +130,36 @@
 .form__item--radio {
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 .form__item--check {
+  margin-bottom: 52px;
+
   @media (min-width: $desktop-width) {
     width: 33%;
   }
 }
 
+.form__item--radio {
+  margin-bottom: 45px;
+}
+
+.form__item--textarea {
+  margin: 41px 0 0 0;
+}
+
 .form__title {
   font-size: 14px;
   line-height: 18px;
+  font-weight: normal;
   text-transform: uppercase;
+  text-align: center;
   color: #d22856;
+}
+
+.form__title--check {
+  margin: 37px 40px 0 40px;
 }
 
 .form__title--contacts {
@@ -129,24 +170,68 @@
   }
 }
 
+.form__title--radio {
+  padding: 0 5px 10px 5px;
+}
+
 .form__label,
 .form__input {
   font-size: 18px;
   line-height: 30px;
 }
 
+.form__input--check,
+.form__input--radio {
+  display: none;
+}
+
 .form__label--text {
+  margin: 0 0 0 27px;
+  font-size: 14px;
   text-transform: uppercase;
   color: #d22856;
 }
 
 .form__input--text {
+  margin: 3px 7px 0 5px;
+  padding: 16px 0 14px 21px;
   border: solid #e5e5e5 2px;
 }
 
 .form__label--contacts {
+  margin: 0 0 3px 27px;
+
   @media (min-width: $desktop-width) {
     order: 2;
+  }
+}
+
+.form__label--check {
+  position: relative;
+  margin-left: 75px;
+  margin-right: auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -70px;
+    width: 37px;
+    height: 37px;
+    border: solid #e5e5e5 1px;
+    background-color: #ffffff;
+  }
+}
+
+.form__input--check:checked ~ .form__label--check {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -60px;
+    width: 30px;
+    height: 30px;
+    background: url("../img/icon-yes.svg") no-repeat;
   }
 }
 
@@ -156,9 +241,41 @@
   }
 }
 
+.form__label--radio {
+  position: relative;
+  margin-left: 74px;
+  margin-right: auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -66px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: solid #e5e5e5 1px;
+    background-color: #ffffff;
+  }
+}
+
+.form__input--radio:checked ~ .form__label--radio {
+  &::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -67px;
+    width: 30px;
+    height: 30px;
+    background: url("../img/icon-map-marker.svg") no-repeat;
+  }
+}
+
 .form__textarea {
-  padding: 20px;
-  height: 197px;
+  margin: 15px 20px 0 20px;
+  padding: 14px 0 0 18px;
+  width: 280px;
+  height: 202px;
   font-size: 18px;
   line-height: 30px;
   font-family: inherit;
@@ -166,7 +283,13 @@
   border: solid #e5e5e5 2px;
 }
 
+.form__submit {
+  margin: 48px 20px 0 20px;
+}
+
 .form__text {
+  margin: 34px 0 15px 0;
+  text-align: center;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -177,6 +300,10 @@
 }
 
 .form__button {
+  height: 62px;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
   background: #2aab6d;
   color: #ffffff;
   border-radius: 0;
