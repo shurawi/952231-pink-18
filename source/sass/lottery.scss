@@ -2,6 +2,11 @@
 
 .lottery__text {
   padding: 46px 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    padding: 91px 78px 0 78px;
+  }
 }
 
 .lottery__pharagraf {
@@ -9,4 +14,16 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.lottery__span {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
 }

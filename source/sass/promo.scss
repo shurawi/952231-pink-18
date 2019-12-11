@@ -37,6 +37,13 @@
   }
 }
 
+.promo__title--form {
+  @media (min-width: $tablet-width) {
+    padding: 72px 24px 0 25px;
+    line-height: 59px;
+  }
+}
+
 .photo-pg__wrap,
 .form-pg__wrap  {
   height: 170px;
