@@ -9,6 +9,13 @@
     display: flex;
     flex-direction: column;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 86px 0 119px;
+    width: 960px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .form__list {
@@ -26,17 +33,29 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 18px 0 0 7px;
+    padding: 0 24px 0 0;
     width: 49%;
   }
 }
 
 .form__list--radio {
+  margin-top: 15px;
+  padding-top: 40px;
+  background-color: #f2f2f2;
+
   @media (min-width: $tablet-width) {
+    margin: 0 20px 0 20px;
+    padding-top: 6px;
+    background-color: #ffffff;
+    border: solid #e5e5e5 1px;
     order: 2;
   }
 
   @media (min-width: $desktop-width) {
-    width: 49%;
+    margin: 56px 0 48px 39px;
+    padding: 0 0 13px 0;
+    width: 45.5%;
   }
 }
 
@@ -50,6 +69,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    margin: 17px 8px 0 12px;
   }
 }
 
@@ -65,20 +85,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 65px 10px 0 10px;
     width: 100%;
-  }
-}
-
-.form__list--radio {
-  margin-top: 15px;
-  padding-top: 40px;
-  background-color: #f2f2f2;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 20px 0 20px;
-    padding-top: 6px;
-    background-color: #ffffff;
-    border: solid #e5e5e5 1px;
   }
 }
 
@@ -92,19 +100,26 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 1200px;
+    margin: 68px 10px 0 10px;
   }
 }
 
 .form__submit {
+  margin: 48px 20px 0 20px;
+
   @media (min-width: $tablet-width) {
+    margin: 65px 18px 0 20px;
+    display: flex;
+    justify-content: space-between;
     order: 6;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    margin: 67px 9px 52px 13px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
 }
 
@@ -115,6 +130,11 @@
     display: flex;
     flex-direction: column;
     margin: 20px 52px 0 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin: 20px 52px 12px 53px;
   }
 }
 
@@ -129,6 +149,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    margin: 28px 0 8px 0;
   }
 }
 
@@ -138,6 +159,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 33px 0 0 17px;
   }
 }
 
@@ -154,6 +179,12 @@
     flex-direction: row;
     margin: 44px 0 48px 0;
   }
+
+  &:last-child {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .form__item--contacts {
@@ -164,9 +195,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 47%;
     display: flex;
     flex-direction: column;
+    width: 47%;
+    margin: 0 70px 0 0;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 }
 
@@ -181,7 +217,51 @@
   margin-bottom: 52px;
 
   @media (min-width: $desktop-width) {
-    width: 33%;
+    margin: 0 0 52px 39px;
+    width: 30%;
+
+    &:first-child {
+      @media (min-width: $desktop-width) {
+        order: 1;
+      }
+    }
+
+    &:nth-child(2) {
+      @media (min-width: $desktop-width) {
+
+        order: 4;
+      }
+    }
+
+    &:nth-child(3) {
+      @media (min-width: $desktop-width) {
+
+        order: 2;
+      }
+    }
+
+    &:nth-child(4) {
+      @media (min-width: $desktop-width) {
+        order: 5;
+      }
+    }
+
+    &:nth-child(5) {
+      @media (min-width: $desktop-width) {
+        margin-left: 18px;
+        width: 27%;
+        order: 3;
+
+      }
+    }
+
+    &:nth-child(6) {
+      @media (min-width: $desktop-width) {
+        margin-left: 18px;
+        width: 27%;
+        order: 6;
+      }
+    }
   }
 }
 
@@ -190,7 +270,7 @@
 }
 
 .form__item--textarea {
-  margin: 41px 0 0 0;
+  margin: 36px 0 0 0;
 }
 
 .form__title {
@@ -219,6 +299,10 @@
     top: -9px;
     left: 14.5%;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 27%;
+  }
 }
 
 .form__title--contacts {
@@ -229,6 +313,10 @@
     top: -10px;
     left: 28.5%;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 36%;
   }
 }
 
@@ -241,6 +329,11 @@
     padding: 0 32px;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    top: -6px;
+    left: 6%;
+  }
 }
 
 .form__title--textarea {
@@ -248,6 +341,11 @@
     top: -55px;
     left: 0;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 27%;
+    margin: auto;
   }
 }
 
@@ -281,6 +379,16 @@
 
   @media (min-width: $tablet-width) {
     width: 90%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 85%;
+  }
+}
+
+.form__input--email {
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -317,6 +425,19 @@
       background: url("../img/icon-phone.svg") no-repeat;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      height: 62px;
+      top: -70px;
+      right: -178%;
+    }
+
+    &::after {
+      top: -50px;
+      right: -163%;
+    }
+  }
 }
 
 .form__label--email {
@@ -341,7 +462,22 @@
       background: url("../img/icon-mail.svg") no-repeat;
     }
   }
-}
+
+    @media (min-width: $desktop-width) {
+      margin-left: 20px;
+
+      &::before {
+        height: 62px;
+        top: -70px;
+        right: -265%;
+      }
+
+      &::after {
+        top: -47px;
+        right: -245%;
+      }
+    }
+  }
 
 .form__label--check {
   position: relative;
@@ -387,6 +523,15 @@
 .form__input--contacts {
   @media (min-width: $tablet-width) {
     order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 12px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    width: 83%;
   }
 }
 
@@ -451,15 +596,11 @@
     width: 80.5%;
     height: 193px;
   }
-}
 
-.form__submit {
-  margin: 48px 20px 0 20px;
-
-  @media (min-width: $tablet-width) {
-    margin: 67px 18px 52px 20px;
-    display: flex;
-    justify-content: space-between;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+    width: 87.5%;
+    height: 127px;
   }
 }
 

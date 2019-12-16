@@ -7,6 +7,11 @@
     margin-bottom: 20px;
     padding: 91px 78px 0 78px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+    padding: 91px 220px 0 220px;
+  }
 }
 
 .lottery__pharagraf {

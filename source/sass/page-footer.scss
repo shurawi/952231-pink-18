@@ -26,6 +26,13 @@
   }
 }
 
+.page-footer__wrap--form {
+  @media (min-width: $desktop-width) {
+    margin: -20px auto 0 auto;
+    padding: 0 122px 0 110px;
+  }
+}
+
 .page-footer__link {
   margin-top: 41px;
   text-align: center;
@@ -44,4 +51,11 @@
 
 .page-footer__pic {
   width: 146px;
+}
+
+
+.page-footer__form {
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 0;
+  }
 }
