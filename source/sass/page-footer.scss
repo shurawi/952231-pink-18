@@ -24,6 +24,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
+    padding: 0 120px 0 109px;
+  }
 }
 
 .page-footer__wrap--form {
