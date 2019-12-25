@@ -160,6 +160,13 @@
     border: solid #d22856 2px;
     background-color: #ffffff;
     z-index: 2;
+    cursor: pointer;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: #d22856;
+    }
   }
 }
 
@@ -169,10 +176,6 @@
   height: 14px;
   top: 78px;
   right: -144px;
-  border-radius: 50%;
-  border: solid #d22856 2px;
-  background-color: #ffffff;
-  z-index: 2;
 
   @media (min-width: $tablet-width) {
     top: 5px;

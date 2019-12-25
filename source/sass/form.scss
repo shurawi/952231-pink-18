@@ -375,6 +375,16 @@
   margin: 3px 7px 0 5px;
   padding: 16px 0 14px 21px;
   border: solid #e5e5e5 2px;
+  outline: none;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active,
+  &:focus {
+    border-color: #d22856;
+  }
 
   @media (min-width: $tablet-width) {
     width: 90%;
@@ -382,6 +392,17 @@
 
   @media (min-width: $desktop-width) {
     width: 85%;
+  }
+}
+
+.form__label--text:hover ~ .form__input--text {
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active,
+  &:focus {
+    border-color: #d22856;
   }
 }
 
@@ -412,6 +433,7 @@
       top: -72px;
       right: -275%;
       background-color: #e5e5e5;
+      cursor: pointer;
     }
 
     &::after {
@@ -422,6 +444,7 @@
       top: -50px;
       right: -261%;
       background: url("../img/icon-phone.svg") no-repeat;
+      cursor: pointer;
     }
   }
 
@@ -449,6 +472,7 @@
       top: -72px;
       right: -393%;
       background-color: #e5e5e5;
+      cursor: pointer;
     }
 
     &::after {
@@ -459,6 +483,7 @@
       top: -47px;
       right: -375%;
       background: url("../img/icon-mail.svg") no-repeat;
+      cursor: pointer;
     }
   }
 
@@ -489,13 +514,17 @@
     top: -3px;
     left: -70px;
     width: 37px;
-    height: 37px;
-    border: solid #e5e5e5 1px;
+    height: 36px;
+    border: solid #e5e5e5 2px;
     background-color: #ffffff;
 
     @media (min-width: $tablet-width) {
       left: -60px;
     }
+  }
+
+  &:hover::before {
+    border-color: #283645;
   }
 
   @media (min-width: $tablet-width) {
@@ -511,11 +540,15 @@
     left: -60px;
     width: 30px;
     height: 30px;
-    background: url("../img/icon-yes.svg") no-repeat;
+    background: url("../img/icon-check.svg") no-repeat;
 
     @media (min-width: $tablet-width) {
       left: -50px;
     }
+  }
+
+  &::before {
+    border-color: #d22856;
   }
 }
 
@@ -547,7 +580,7 @@
     width: 33px;
     height: 33px;
     border-radius: 50%;
-    border: solid #e5e5e5 1px;
+    border: solid #e5e5e5 2px;
     background-color: #ffffff;
 
     @media (min-width: $tablet-width) {
@@ -558,23 +591,37 @@
     }
   }
 
+  &:hover::before {
+    border-color: #283645;
+  }
+
+  &:active::before {
+    border-color: #d22856;
+  }
+
   @media (min-width: $tablet-width) {
     margin-left: 106px;
   }
 }
 
 .form__input--radio:checked ~ .form__label--radio {
+  &::before {
+    border-color: #d22856;
+  }
+
   &::after {
     content: "";
     position: absolute;
-    top: -3px;
-    left: -67px;
-    width: 30px;
-    height: 30px;
-    background: url("../img/icon-map-marker.svg") no-repeat;
+    top: 8px;
+    left: -55px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #d22856;
 
     @media (min-width: $tablet-width) {
-      left: -60px;
+      top: 8px;
+      left: -48px;
     }
   }
 }
@@ -632,6 +679,10 @@
 
   &:hover {
     background-color: #1c9b5e;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
   }
 
   &:active,

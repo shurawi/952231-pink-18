@@ -103,7 +103,10 @@
 }
 
 .commet__buttom {
+  display: none;
+
   @media (min-width: $desktop-width) {
+    display: block;
     border: none;
     background-color: #ffffff;
     cursor: pointer;
