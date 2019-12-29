@@ -70,6 +70,10 @@
     left: -55px;
     bottom: -68px;
     background-color: #dddfe0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -152,6 +156,12 @@
 }
 
 .video__slider {
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #d22856;
+  }
+
   @media (min-width: $tablet-width) {
     position: absolute;
     width: 14px;
@@ -160,6 +170,7 @@
     border: solid #d22856 2px;
     background-color: #ffffff;
     z-index: 2;
+    cursor: pointer;
   }
 }
 
@@ -172,7 +183,6 @@
   border-radius: 50%;
   border: solid #d22856 2px;
   background-color: #ffffff;
-  z-index: 2;
 
   @media (min-width: $tablet-width) {
     top: 5px;
@@ -229,6 +239,7 @@
   @media (min-width: $desktop-width) {
     width: 46px;
     height: 46px;
+    fill: #d22856;
   }
 }
 

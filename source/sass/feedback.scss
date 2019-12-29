@@ -1,5 +1,13 @@
 @import "variables.scss";
 
+.feedback__wrap {
+  margin-top: 46px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 71px;
+  }
+}
+
 .feedback__container {
   display: flex;
   flex-direction: column;
@@ -20,7 +28,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin-top: 60px;
+    margin-top: 55px;
   }
 }
 
@@ -75,6 +83,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 14px;
     font-size: 50px;
     line-height: 45px;
   }
@@ -110,9 +119,9 @@
 .feedback__map {
   position: relative;
   margin-top: 15px;
-  height: 210px;
-  background: #ffffff url("../img/bg-map-mobile@1x.png") no-repeat;
-  background-position: 0% 102%;
+  height: 200px;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat;
+  background-position: center -445px;
 
   &::before {
     position: absolute;
@@ -125,6 +134,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 10px;
+    margin-top: 6px;
+    min-height: 372px;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-position: center -345px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 518px;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-position: center -263px;
   }
 }

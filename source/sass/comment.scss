@@ -1,7 +1,15 @@
 @import "variables.scss";
 
 .comment__wrap {
-  padding: 45px 0 0 0;
+  padding: 45px 0 35px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 14px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .comment__background {
@@ -79,5 +87,54 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
+  }
+}
+
+.commet__controls {
+  margin: 24px 35% 3px;
+
+  @media (min-width: $tablet-width) {
+    margin: 29px 43% 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.commet__buttom {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    fill: #bec2c7;
+
+    &:hover {
+      fill: #7e868f;
+    }
+
+    &:active,
+    &:focus {
+      fill: #e9ebec;
+    }
+  }
+}
+
+.commet__buttom--left {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 59%;
+    left: 10%;
+  }
+}
+
+.commet__buttom--right {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 59%;
+    right: 10.5%;
   }
 }

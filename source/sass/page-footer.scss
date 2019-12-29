@@ -24,6 +24,18 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
+    padding: 0 120px 0 109px;
+  }
+}
+
+.page-footer__wrap--form {
+  @media (min-width: $desktop-width) {
+    margin: -20px auto 30px auto;
+    padding: 0 122px 0 110px;
+  }
 }
 
 .page-footer__link {
@@ -44,4 +56,11 @@
 
 .page-footer__pic {
   width: 146px;
+}
+
+
+.page-footer__form {
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 0;
+  }
 }
