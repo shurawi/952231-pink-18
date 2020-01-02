@@ -31,6 +31,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 320px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #283645;
 }
@@ -85,6 +86,7 @@ img {
 }
 
 /*Радио кнопки для блоков commet и tariff index.html*/
+
 .controls__radio {
   display: none;
 }

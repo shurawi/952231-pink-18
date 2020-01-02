@@ -290,6 +290,17 @@
   color: #d22856;
   border: solid #d22856 2px;
 
+  &:hover {
+    color: #ffffff;
+    background-color: #d22856;
+  }
+
+  &:focus,
+  &:active {
+    color: #e06989;
+    background-color: #d22856;
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: 39px;
   }
@@ -299,4 +310,15 @@
   background-color: #ffffff;
   color: #dddfe0;
   border: solid #dddfe0 2px;
+
+  &:hover {
+    color: #b5b9be;
+    border-color: #b5b9be;
+  }
+
+  &:focus,
+  &:active {
+    color: #cbced2;
+    background-color: #b5b9be;
+  }
 }
