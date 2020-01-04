@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__wrap wrap">
         <a class="page-header__link" href="index.html">
@@ -56,6 +59,10 @@
           <div class="panorama__item">
             <div class="panorama__baner">
               <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp, img/panorama-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp, img/panorama-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/panorama-mobile@1x.webp, img/panorama-mobile@2x.webp 2x">
+
                 <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
                 <img class="panorama__pic" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="панорамное фото спуска с горной лестницы">
@@ -77,6 +84,10 @@
         <div class="photo__wrap wrap">
           <div class="photo__item">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp, img/photo-car-desktop@1x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="img/photo-car-mobile@1x.webp, img/photo-car-mobile@2x.webp 2x">
+
               <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@1x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
               <img class="photo__pic" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="фотосъемка белой машины, тип кузова седан">
@@ -89,6 +100,10 @@
           </div>
           <div class="photo__item">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp, img/photo-drumset-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp, img/photo-drumset-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp, img/photo-drumset-mobile@2x.webp 2x">
+
               <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
               <img class="photo__pic" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="фото барабанной установки ">
@@ -102,6 +117,10 @@
           </div>
           <div class="photo__item">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp, img/photo-window-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp, img/photo-window-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-window-mobile@1x.webp, img/photo-window-mobile@2x.webp 2x">
+
               <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
               <img class="photo__pic" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="фото витражных окон сквозь которые открывается вид на облачное небо">
@@ -115,6 +134,10 @@
           </div>
           <div class="photo__item">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp, img/photo-fair-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp, img/photo-fair-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp, img/photo-fair-mobile@2x.webp 2x">
+
               <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
               <img class="photo__pic" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="фото с выставки Кубанская бахча">
@@ -127,6 +150,10 @@
           </div>
           <div class="photo__item">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp, img/photo-pov-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp, img/photo-pov-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp, img/photo-pov-mobile@2x.webp 2x">
+
               <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
               <img class="photo__pic" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="фото вида с горы">
@@ -139,6 +166,10 @@
           </div>
           <div class="photo__item">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp, img/photo-wing-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp, img/photo-wing-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp, img/photo-wing-mobile@2x.webp 2x">
+
               <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
               <img class="photo__pic" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="фото крыла самолета, на фоне которого восходит солнце">
@@ -156,9 +187,14 @@
         </div>
       </section>
       <section class="video">
+        <h2 class="visually-hidden">Видео наших пользователей</h2>
         <div class="video__wrap wrap">
           <div class="video__baner">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp, img/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp, img/photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-road-mobile@1x.webp, img/photo-road-mobile@2x.webp 2x">
+
               <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
               <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="фото снежной дороги в зимнем лесу">
