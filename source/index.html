@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__wrap wrap">
         <a class="page-header__link" href="index.html">
@@ -17,7 +20,12 @@
             <img class="peage-header__logo" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Лого Пинк">
           </picture>
         </a>
-        <button class="page-header__button page-header__button--close" type="button">Открыть меню</button>
+        <button class="page-header__button page-header__button--close" type="button">
+          <svg width="23.867" height="23.867">
+            <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
+          </svg>
+          Закрыть меню
+        </button>
         <nav class="header-nav">
           <div class="header-nav__wrap">
             <div class="header-nav__item">
@@ -44,22 +52,28 @@
             <h2 class="app__title">Взгляните на жизнь иначе!</h2>
           </div>
           <div class="app__container">
-            <button class="app__button button" type="button">Скачать приложение</button>
+            <a class="app__button button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
             <div class="app__list">
               <div class="app__item">
-                <svg width="46.21" height="56.753">
-                  <use xlink:href="img/sprite.svg#logo-apple"></use>
-                </svg>
+                <a class="app__link" href="https://www.apple.com/ru/ios/app-store/">
+                  <svg width="46.21" height="56.753">
+                    <use xlink:href="#logo-apple"></use>
+                  </svg>
+                </a>
               </div>
               <div class="app__item">
-                <svg width="42.084" height="47.041">
-                  <use xlink:href="img/sprite.svg#logo-android"></use>
-                </svg>
+                <a class="app__link" href="https://play.google.com/store/apps?hl=ru">
+                  <svg width="42.084" height="47.041">
+                    <use xlink:href="#logo-android"></use>
+                  </svg>
+                </a>
               </div>
               <div class="app__item">
-                <svg width="43.922px" height="41.992px">
-                  <use xlink:href="img/sprite.svg#logo-microsoft"></use>
-                </svg>
+                <a class="app__link" href="https://www.microsoft.com/ru-ru/store/apps/windows">
+                  <svg width="43.922px" height="41.992px">
+                    <use xlink:href="#logo-microsoft"></use>
+                  </svg>
+                </a>
               </div>
             </div>
             <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -100,7 +114,7 @@
           <div class="research__text">
             <h2 class="research__title">Эффект на 24 часа!</h2>
             <p class="research__paragraph">Британские ученые провели исследования и доказали, что положительный эффектот использования приложения длится целые сутки!</p>
-            <a class="research__link">Узнать больше об исследовании</a>
+            <a class="research__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
       </section>
@@ -115,23 +129,23 @@
             <p class="comment__text">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</p>
           </div>
           <div class="commet__controls controls">
-            <input class="controls__radio controls__radio--radio1" type="radio" id="com1" name="commet" checked>
+            <input class="controls__radio controls__radio--radio1" type="radio" id="com1" name="commet" checked="">
             <input class="controls__radio controls__radio--radio2" type="radio" id="com2" name="commet">
             <input class="controls__radio controls__radio--radio3" type="radio" id="com3" name="commet">
             <div class="controls__buttons">
-              <label class="controls__label controls__label--label1" for="com1" ></label>
-              <label class="controls__label controls__label--label2" for="com2" ></label>
-              <label class="controls__label controls__label--label3" for="com3" ></label>
+              <label class="controls__label controls__label--label1" for="com1"></label>
+              <label class="controls__label controls__label--label2" for="com2"></label>
+              <label class="controls__label controls__label--label3" for="com3"></label>
             </div>
           </div>
           <button class="commet__buttom commet__buttom--left" type="button">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
-              <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+            <svg width="21.706px" height="41.719px">
+              <use xlink:href="#icon-review-arrow-left"></use>
             </svg>
           </button>
           <button class="commet__buttom commet__buttom--right">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
-              <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+            <svg width="21.706px" height="41.719px">
+              <use xlink:href="#icon-review-arrow-right"></use>
             </svg>
           </button>
         </div>
@@ -160,7 +174,7 @@
                 </th>
               </tr>
               <tr class="table__row">
-                <td class="table__cell table__cell--option" class="table__cell">
+                <td class="table__cell table__cell--option">
                   <p class="tablet__paragraph">Розовый фильтр</p></td>
                 <td class="table__cell">
                   <p class="tablet__paragraph tablet__paragraph--check">Розовый фильтр</p>
@@ -212,12 +226,12 @@
             </table>
             <div class="tariff__controls controls">
               <input class="controls__radio controls__radio--radio1" type="radio" id="tar1" name="tariff">
-              <input class="controls__radio controls__radio--radio2" type="radio" id="tar2" name="tariff" checked>
+              <input class="controls__radio controls__radio--radio2" type="radio" id="tar2" name="tariff" checked="">
               <input class="controls__radio controls__radio--radio3" type="radio" id="tar3" name="tariff">
-              <div class="controls__buttons">
-                <label class="controls__label controls__label--label1" for="tar1" ></label>
-                <label class="controls__label controls__label--label2" for="tar2" ></label>
-                <label class="controls__label controls__label--label3" for="tar3" ></label>
+              <div class="controls__buttons controls__buttons--tariff">
+                <label class="controls__label controls__label--label1" for="tar1"></label>
+                <label class="controls__label controls__label--label2" for="tar2"></label>
+                <label class="controls__label controls__label--label3" for="tar3"></label>
               </div>
             </div>
           </div>
@@ -245,6 +259,7 @@
             </div>
           </div>
           <div class="feedback__map">
+            <iframe class="feedback__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad8ed6dd461449b2e1fecb17f40a505fcc41e714e1c0bf3ef2714a393b688ba06&amp;source=constructor" width="512" height="345"></iframe>
           </div>
         </div>
       </section>
@@ -253,7 +268,7 @@
       <div class="page-footer__wrap page-footer__wrap--idex wrap">
         <a class="page-footer__link" href="index.html">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
             <img class="page-footer__pic" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Лого Пинк, розовые очки">
           </picture>
         </a>
@@ -261,21 +276,21 @@
           <div class="social__item social__item--tw">
             <a class="social__link social__link--tw" href="#">
               <svg class="social__pic social__pic--tw" width="17.5" height="14.663">
-                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </div>
           <div class="social__item social__item--fb">
             <a class="social__link social__link--fb" href="#">
               <svg class="social__pic social__pic--fb" width="8.673" height="18.944">
-                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </div>
           <div class="social__item social__item--yt">
             <a class="social__link social__link--yt" href="#">
               <svg class="social__pic social__pic--yt" width="14.64px" height="13.96px">
-                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                <use xlink:href="#icon-youtube"></use>
               </svg>
             </a>
           </div>
@@ -284,7 +299,7 @@
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__pic" width="26.943" height="34.09">
-              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              <use xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>
         </div>

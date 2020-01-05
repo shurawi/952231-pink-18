@@ -57,9 +57,20 @@
   font-size: 0;
   width: 30px;
   height: 30px;
-  background: url("../img/icon-menu-cross.svg") no-repeat center;
+  fill: #ffffff;
+  background-color: inherit;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:focus,
+  &:active {
+    fill: #431120;
+  }
+
 
   @media (min-width: $tablet-width) {
     top: 43px;
