@@ -2,6 +2,10 @@
 
 .greeting__wrap {
   margin: 37px auto 30px auto;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 47px;
+  }
 }
 
 .greeting__title {

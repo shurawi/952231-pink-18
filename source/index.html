@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link href="fonts/opensans.woff2" rel="preload" as="font">
+    <link href="fonts/opensanslight.woff2" rel="preload" as="font">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
   </head>
@@ -13,16 +15,16 @@
     </div>
     <header class="page-header">
       <div class="page-header__wrap wrap">
-        <a class="page-header__link" href="index.html">
+        <a class="page-header__link text-hidden" href="index.html">логотип пинк
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
             <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
             <img class="peage-header__logo" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Лого Пинк">
           </picture>
         </a>
         <button class="page-header__button page-header__button--close" type="button">
           <svg width="23.867" height="23.867">
-            <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
+            <use xlink:href="#icon-menu-cross"></use>
           </svg>
           Закрыть меню
         </button>
@@ -52,24 +54,24 @@
             <h2 class="app__title">Взгляните на жизнь иначе!</h2>
           </div>
           <div class="app__container">
-            <a class="app__button button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+            <a class="app__button button text-hidden" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
             <div class="app__list">
               <div class="app__item">
-                <a class="app__link" href="https://www.apple.com/ru/ios/app-store/">
+                <a class="app__link text-hidden" href="https://www.apple.com/ru/ios/app-store/" lang="en">app-store
                   <svg width="46.21" height="56.753">
                     <use xlink:href="#logo-apple"></use>
                   </svg>
                 </a>
               </div>
               <div class="app__item">
-                <a class="app__link" href="https://play.google.com/store/apps?hl=ru">
+                <a class="app__link text-hidden" href="https://play.google.com/store/apps?hl=ru" lang="en">play market
                   <svg width="42.084" height="47.041">
                     <use xlink:href="#logo-android"></use>
                   </svg>
                 </a>
               </div>
               <div class="app__item">
-                <a class="app__link" href="https://www.microsoft.com/ru-ru/store/apps/windows">
+                <a class="app__link text-hidden" href="https://www.microsoft.com/ru-ru/store/apps/windows" lang="en">windows store
                   <svg width="43.922px" height="41.992px">
                     <use xlink:href="#logo-microsoft"></use>
                   </svg>
@@ -138,12 +140,12 @@
               <label class="controls__label controls__label--label3" for="com3"></label>
             </div>
           </div>
-          <button class="commet__buttom commet__buttom--left" type="button">
+          <button class="commet__buttom commet__buttom--left" type="button" aria-label="кнопка переключает блок отзывов влево">
             <svg width="21.706px" height="41.719px">
               <use xlink:href="#icon-review-arrow-left"></use>
             </svg>
           </button>
-          <button class="commet__buttom commet__buttom--right">
+          <button class="commet__buttom commet__buttom--right" aria-label="кнопка переключает блок отзывов вправо">
             <svg width="21.706px" height="41.719px">
               <use xlink:href="#icon-review-arrow-right"></use>
             </svg>
@@ -259,14 +261,14 @@
             </div>
           </div>
           <div class="feedback__map">
-            <iframe class="feedback__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad8ed6dd461449b2e1fecb17f40a505fcc41e714e1c0bf3ef2714a393b688ba06&amp;source=constructor" width="512" height="345"></iframe>
+            <iframe title="мы на яндекс картах" class="feedback__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad8ed6dd461449b2e1fecb17f40a505fcc41e714e1c0bf3ef2714a393b688ba06&amp;source=constructor" width="512" height="345" loading="lazy"></iframe>
           </div>
         </div>
       </section>
     </main>
     <footer class="page-footer page-footer--index">
       <div class="page-footer__wrap page-footer__wrap--idex wrap">
-        <a class="page-footer__link" href="index.html">
+        <a class="page-footer__link text-hidden" href="index.html">на главную страницу
           <picture>
             <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
             <img class="page-footer__pic" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Лого Пинк, розовые очки">
@@ -274,21 +276,21 @@
         </a>
         <div class="social social--index">
           <div class="social__item social__item--tw">
-            <a class="social__link social__link--tw" href="#">
+            <a class="social__link social__link--tw text-hidden" href="#">мы в триттере
               <svg class="social__pic social__pic--tw" width="17.5" height="14.663">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </div>
           <div class="social__item social__item--fb">
-            <a class="social__link social__link--fb" href="#">
+            <a class="social__link social__link--fb text-hidden" href="#">мы в фейсбуке
               <svg class="social__pic social__pic--fb" width="8.673" height="18.944">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </div>
           <div class="social__item social__item--yt">
-            <a class="social__link social__link--yt" href="#">
+            <a class="social__link social__link--yt text-hidden" href="#">наш канал на ютюб
               <svg class="social__pic social__pic--yt" width="14.64px" height="13.96px">
                 <use xlink:href="#icon-youtube"></use>
               </svg>
@@ -297,7 +299,7 @@
         </div>
         <div class="copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link text-hidden" href="https://htmlacademy.ru/intensive/adaptive">интенсив по верстке в штмл академии
             <svg class="copyright__pic" width="26.943" height="34.09">
               <use xlink:href="#logo-htmlacademy"></use>
             </svg>
@@ -305,5 +307,6 @@
         </div>
       </div>
     </footer>
+    <script async src="js/picturefill.js"></script>
   </body>
 </html>

@@ -96,6 +96,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-left: 20px;
   }
 }
