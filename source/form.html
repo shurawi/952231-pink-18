@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link href="fonts/opensans.woff2" rel="preload" as="font">
+    <link href="fonts/opensanslight.woff2" rel="preload" as="font">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
   </head>
@@ -13,9 +15,9 @@
     </div>
     <header class="page-header">
       <div class="page-header__wrap wrap">
-        <a class="page-header__link" href="index.html">
+        <a class="page-header__link text-hidden" href="index.html">логотип пинк
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
             <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
             <img class="peage-header__logo" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Лого Пинк">
           </picture>
@@ -147,7 +149,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrap page-footer__wrap--form wrap">
-        <a class="page-footer__link" href="index.html">
+        <a class="page-footer__link text-hidden" href="index.html">на главную страницу
           <picture>
             <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
             <img class="page-footer__pic" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Лого Пинк, розовые очки">
@@ -155,21 +157,21 @@
         </a>
         <div class="social social--index">
           <div class="social__item social__item--tw">
-            <a class="social__link social__link--tw" href="#">
+            <a class="social__link social__link--tw text-hidden" href="#">мы в триттере
               <svg class="social__pic social__pic--tw" width="17.5" height="14.663">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </div>
           <div class="social__item social__item--fb">
-            <a class="social__link social__link--fb" href="#">
+            <a class="social__link social__link--fb text-hidden" href="#">мы в фейсбуке
               <svg class="social__pic social__pic--fb" width="8.673" height="18.944">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </div>
           <div class="social__item social__item--yt">
-            <a class="social__link social__link--yt" href="#">
+            <a class="social__link social__link--yt text-hidden" href="#">наш канал на ютюб
               <svg class="social__pic social__pic--yt" width="14.64px" height="13.96px">
                 <use xlink:href="#icon-youtube"></use>
               </svg>
@@ -178,13 +180,14 @@
         </div>
         <div class="copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link text-hidden" href="https://htmlacademy.ru/intensive/adaptive">интенсив по верстке в штмл академии
             <svg class="copyright__pic" width="26.943" height="34.09">
               <use xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
+      <script async src="js/picturefill.js"></script>
     </footer>
     </body>
   </html>

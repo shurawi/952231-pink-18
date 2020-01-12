@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     position: relative;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -171px;
+  }
 }
 
 .app__headline {
@@ -34,15 +38,15 @@
 
 
   @media (min-width: $desktop-width) {
-    height: 906px;
+    height: 912px;
     background: url("../img/iphone-hand-desktop@1x.png") no-repeat, url("../img/bg-back-desktop@1x.jpg") no-repeat;
     background-position: 96% 100%, 50% 95%;
   }
 
   @media (min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
-    height: 906px;
+    height: 912px;
     background: url("../img/iphone-hand-desktop@2x.png") no-repeat, url("../img/bg-back-desktop@2x.jpg") no-repeat;
-    background-position: 96% 98%, 50% 113%;
+    background-position: 98% 101%, 50% 124%;
     background-size: 1048px auto, 2555px auto;
   }
 }
@@ -63,8 +67,8 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 86px;
-    padding: 270px 0 0 80px;
-    width: 300px;
+    padding: 280px 0 0 80px;
+    width: 311px;
     font-size: 50px;
     line-height: 59px;
   }
@@ -115,6 +119,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 40px;
     font-size: 21px;
     line-height: 18px;
   }
