@@ -1,11 +1,5 @@
 @import "variables.scss";
 
-.photo-pg__wrap {
-  @media (min-width: $desktop-width) {
-    margin-top: -128px;
-  }
-}
-
 .promo__title {
   padding: 30px 24px 0 25px;
   font-family: "Open Sans Light", "Arial", sans-serif;
@@ -36,7 +30,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 173px 220px 0 220px;
+    padding: 190px 220px 0 220px;
   }
 }
 
@@ -66,30 +60,17 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -128px;
     height: 414px;
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
-    background-position: 50% 0;
+    background-position: 50% 20px;
   }
 
   @media (min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+    margin-top: -128px;
     height: 414px;
     background: url("../img/bg-back-desktop@2x.jpg") no-repeat;
-    background-position: 50% 20px;
-    background-size: 2562px auto;
-  }
-}
-
-.form-pg__wrap {
-  @media (min-width: $desktop-width) {
-    height: 392px;
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
-    background-position: 50% 0;
-  }
-
-  @media (min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
-    height: 392px;
-    background: url("../img/bg-back-desktop@2x.jpg") no-repeat;
-    background-position: 50% 20px;
+    background-position: 50% 28px;
     background-size: 2562px auto;
   }
 }
