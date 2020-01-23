@@ -14,9 +14,9 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
     width: 100%;
-    height: 100%;
+    height: 20%;
+    top: 0;
     background-color: transparent;
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
@@ -26,22 +26,22 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 90px;
+    padding-top: 88px;
     padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 174px;
+    padding-top: 187px;
     padding-bottom: 93px;
   }
 }
 
 .tariff__inner {
   @media (min-width: $tablet-width) {
-    width: 660px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
+    width: 660px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,10 +51,11 @@
 
 .table {
   position: relative;
-  border-collapse: collapse;
-  left: 50%;
-  transform: translateX(-50%);
   width: 835px;
+  left: 50%;
+  border-collapse: collapse;
+  transform: translateX(-50%);
+
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -95,10 +96,10 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: -2px;
     width: 72px;
     height: 72px;
+    top: 0;
+    left: -2px;
     background: url("../img/bg-hit.svg") no-repeat top left;
     background-size: 72px 72px;
 
@@ -136,10 +137,10 @@
 
 .table__span {
   position: absolute;
-  top: 8px;
-  left: 0;
   width: 78px;
   height: 73px;
+  top: 8px;
+  left: 0;
   transform: rotate(-45deg);
   font-weight: 400;
   text-transform: uppercase;
@@ -198,13 +199,13 @@
 .tablet__paragraph--check {
   @media (min-width: $tablet-width) {
     position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
     margin: -1px;
     padding: 0;
+    height: 1px;
+    width: 1px;
     border: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
   }
 }
 
@@ -239,7 +240,7 @@
 }
 
 .tariff__controls {
-  margin: 34px 25% 5px 41%;
+  margin: 34px 25% 5px 39%;
 
   @media (min-width: $tablet-width) {
     display: none;

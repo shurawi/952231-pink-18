@@ -118,10 +118,10 @@
   &::before {
     content: "";
     position: absolute;
-    top: 16px;
-    left: 0;
     width: 13px;
     height: 13px;
+    top: 16px;
+    left: 0;
     background: url("../img/icon-heart.svg") no-repeat;
 
     @media (min-width: $tablet-width) {
@@ -137,10 +137,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 14px;
-      right: -28px;
       width: 13px;
       height: 13px;
+      top: 14px;
+      right: -28px;
       background: url("../img/icon-heart.svg") no-repeat;
     }
   }

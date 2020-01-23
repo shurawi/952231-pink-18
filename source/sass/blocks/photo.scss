@@ -48,8 +48,8 @@
 }
 
 .photo__item--title {
-  padding: 42px 35px 51px 35px;
   margin: 0;
+  padding: 42px 35px 51px 35px;
   text-align: center;
   background-color: #ffffff;
 
@@ -63,7 +63,7 @@
   }
 }
 
-.photo__item--conclusion {
+.photo__legend {
   margin: 25px 0 0 0;
   text-align: center;
   background-color: #ffffff;
@@ -74,7 +74,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 36px 256px 39px 46px;
+    padding: 36px 44px 44px 46px;
   }
 }
 
@@ -92,11 +92,11 @@
 }
 
 .photo__text {
-  margin-bottom: 22px;
-  padding: 17px 20px 0 17px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 22px;
+  padding: 17px 20px 0 17px;
 
   @media (min-width: $tablet-width) {
     margin-right: 0;
@@ -129,17 +129,17 @@
   font-family: "Open Sans Bold", "Arial", sans-serif;
 }
 
-.photo__paragraph--conclusion {
+.photo__paragraph--legend {
   font-size: 14px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     font-size: 18px;
     line-height: 30px;
-    padding: 0;
   }
 }
 
-.photo__paragraph--conclusion:last-child {
+.photo__paragraph--legend:last-child {
   padding: 3px 0 42px 0;
   line-height: 30px;
 
@@ -163,10 +163,10 @@
   &::before {
     content: "";
     position: absolute;
-    top: 16px;
-    left: 0;
     width: 13px;
     height: 13px;
+    top: 16px;
+    left: 0;
     background: url("../img/icon-heart.svg") no-repeat;
 
     @media (min-width: $tablet-width) {
@@ -181,10 +181,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 4px;
-      right: 10px;
       width: 13px;
       height: 13px;
+      top: 4px;
+      right: 10px;
       background: url("../img/icon-heart.svg") no-repeat;
     }
   }

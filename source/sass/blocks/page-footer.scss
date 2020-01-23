@@ -9,11 +9,12 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 0 20px 0 20px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 60px;
+    margin-bottom: 50px;
     padding: 0 120px;
   }
 }
@@ -33,7 +34,7 @@
 
 .page-footer__wrap--form {
   @media (min-width: $desktop-width) {
-    margin: -20px auto 30px auto;
+    margin: -20px auto 50px auto;
     padding: 0 122px 0 110px;
   }
 }
@@ -51,6 +52,12 @@
     display: block;
     width: 30%;
     padding: 0 107px 0 0;
+  }
+}
+
+.page-footer__link--photo {
+  @media (min-width: $desktop-width) {
+    padding-right: 123px;
   }
 }
 
