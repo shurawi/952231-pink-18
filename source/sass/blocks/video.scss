@@ -102,6 +102,13 @@
   }
 }
 
+.video__tool {
+  padding-left: 2px;
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}
+
 .video__line {
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -230,6 +237,7 @@
     fill: #8d949b;
   }
 
+  &:focus-within,
   &:active {
     fill: #d22856;
   }
