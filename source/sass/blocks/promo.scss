@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 188px 416px 0 416px;
+    padding: 193px 416px 0 416px;
     line-height: 58px;
   }
 }
@@ -32,6 +32,11 @@
   @media (min-width: $desktop-width) {
     padding: 190px 220px 0 220px;
   }
+}
+
+.photo-pg__promo,
+.form-pg__promo {
+  background-color: #283645;
 }
 
 .photo-pg__wrap,

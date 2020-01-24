@@ -1,5 +1,9 @@
 @import "variables.scss";
 
+.app {
+  background-color: #283645;
+}
+
 .app__wrap {
   color: #ffffff;
 
@@ -35,7 +39,6 @@
     background-position: 54% 100%, 50% 99%;
     background-size: 704px auto, 1200px auto;
   }
-
 
   @media (min-width: $desktop-width) {
     height: 912px;
@@ -80,8 +83,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    width: 350px;
     margin: 237px 0 0 0;
+    width: 350px;
     top: 0;
     background-color: rgba(29, 38, 49, 0);
   }

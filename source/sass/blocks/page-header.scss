@@ -1,5 +1,13 @@
 @import "variables.scss";
 
+.page-header {
+  background: #283645;
+
+  @media (min-width: $desktop-width) {
+    background: none;
+  }
+}
+
 .page-header__wrap {
   position: relative;
   display: flex;
@@ -27,14 +35,15 @@
 
 .page-header__link {
   display: flex;
-  padding: 17px;
+  padding: 17px 0 21px 19px;
+  min-height: 62px;
   align-items: center;
-  min-height: 61px;
   border-bottom: solid #000000 1px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
 
   @media (min-width: $tablet-width) {
-    min-height: 112px;
+    padding: 20px 0 32px 20px;
+    min-height: 110px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,11 +61,11 @@
 
 .page-header__button {
   position: absolute;
+  width: 30px;
+  height: 30px;
   top: 13px;
   right: 17px;
   font-size: 0;
-  width: 30px;
-  height: 30px;
   fill: #ffffff;
   background-color: inherit;
   border: none;
@@ -71,7 +80,6 @@
     fill: #431120;
   }
 
-
   @media (min-width: $tablet-width) {
     top: 43px;
   }
@@ -79,6 +87,10 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.page-header__button--no-js {
+  display: none;
 }
 
 .header-nav {
