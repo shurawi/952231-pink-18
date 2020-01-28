@@ -9,9 +9,19 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+}
 
+.photo__list {
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   @media (min-width: $desktop-width) {
-    width: 1000px;
+    margin: 0 100px;
   }
 }
 
@@ -105,6 +115,10 @@
     height: 150px;
     background-color: #f2f2f2;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 27px;
+  }
 }
 
 .photo__paragraph {
@@ -148,7 +162,7 @@
   }
 }
 
-.photo__button {
+.photo__count {
   padding: 8px 0 0 30px;
   position: relative;
   font-size: 12px;

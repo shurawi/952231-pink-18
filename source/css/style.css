@@ -1540,12 +1540,12 @@ img {
       width: 940px; } }
 
 @media (min-width: 660px) {
-  .video__baner {
+  .video__banner {
     width: 87%;
     margin-top: 38px; } }
 
 @media (min-width: 960px) {
-  .video__baner {
+  .video__banner {
     width: 33.5%;
     margin: 37px 0 0 60px; } }
 
@@ -1797,13 +1797,13 @@ img {
       margin-bottom: 20px;
       padding: 91px 220px 0 220px; } }
 
-.lottery__pharagraf {
+.lottery__paragraph {
   margin: 0;
   font-size: 14px;
   line-height: 30px;
   text-align: center; }
   @media (min-width: 660px) {
-    .lottery__pharagraf {
+    .lottery__paragraph{
       font-size: 18px; } }
 
 .lottery__span {

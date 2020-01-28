@@ -35,8 +35,8 @@
 
 .page-header__link {
   display: flex;
-  padding: 17px 0 21px 19px;
-  min-height: 62px;
+  padding: 11px 0 21px 19px;
+  min-height: 70px;
   align-items: center;
   border-bottom: solid #000000 1px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
@@ -143,7 +143,8 @@
     color: #d22856;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     color: rgba(210, 40, 86, 0.3);
   }
 }

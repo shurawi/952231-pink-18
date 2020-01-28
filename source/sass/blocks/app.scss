@@ -17,7 +17,7 @@
 }
 
 .app__headline {
-  height: 396px;
+  min-height: 396px;
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat, url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-position: 0 100%, 0 0%;
 
@@ -28,26 +28,26 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 620px;
+    min-height: 620px;
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat, url("../img/bg-back-tablet@1x.jpg") no-repeat;
     background-position: 54% 100%, 52% 95%;
   }
 
   @media (min-width: $tablet-width) and (min-resolution: $retina-dpi), (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
-    height: 620px;
+    min-height: 620px;
     background: url("../img/iphone-hand-tablet@2x.png") no-repeat, url("../img/bg-back-tablet@2x.jpg") no-repeat;
     background-position: 54% 100%, 50% 99%;
     background-size: 704px auto, 1200px auto;
   }
 
   @media (min-width: $desktop-width) {
-    height: 912px;
+    min-height: 912px;
     background: url("../img/iphone-hand-desktop@1x.png") no-repeat, url("../img/bg-back-desktop@1x.jpg") no-repeat;
     background-position: 96% 100%, 50% 95%;
   }
 
   @media (min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
-    height: 912px;
+    min-height: 912px;
     background: url("../img/iphone-hand-desktop@2x.png") no-repeat, url("../img/bg-back-desktop@2x.jpg") no-repeat;
     background-position: 98% 101%, 50% 124%;
     background-size: 1048px auto, 2555px auto;
@@ -69,7 +69,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 86px;
+    margin-left: 82px;
     padding: 280px 0 0 80px;
     width: 311px;
     font-size: 50px;
@@ -97,9 +97,9 @@
 
 .app__button {
   display: inline-block;
-  margin-top: 30px;
-  padding-top: 10px;
-  height: 54px;
+  margin-top: 27px;
+  padding-top: 15px;
+  min-height: 54px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   text-align: center;
   text-decoration: none;
@@ -112,12 +112,13 @@
     background-color: #ffffff;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     color: rgba(210, 40, 86, 0.3);
+    background-color: #ffffff;
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 15px;
     width: 300px;
   }
 

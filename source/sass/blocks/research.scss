@@ -11,7 +11,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-top: 54px;
+    padding-top: 56px;
     padding-bottom: 30px;
   }
 }
@@ -35,7 +35,7 @@
       font-weight: 700;
       line-height: 150px;
       color: #d22856;
-      border: 15px solid #d22856;
+      border: solid #d22856 15px;
       border-radius: 50%;
       z-index: 1;
     }
@@ -64,7 +64,7 @@
       left: 150px;
       font-size: 120px;
       line-height: 186px;
-      border: 17px solid #d22856;
+      border: solid #d22856 17px ;
       border-radius: 50%;
     }
 
@@ -85,7 +85,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 65px;
+    margin-top: 62px;
   }
 }
 
